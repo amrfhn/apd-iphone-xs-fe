@@ -210,6 +210,33 @@
                 border-top: 1px solid #ccc;
                 border-bottom: 1px solid #ccc;
                 margin-bottom: 20px;
+
+                @include media-breakpoint-down(md){
+                   overflow: hidden;
+                   display: block;
+                   position: relative;
+                }
+
+                .tab-nav {
+                    position: absolute;
+                    z-index: 999;
+                    top: 25%;
+                    display: none;
+
+                    @include media-breakpoint-down(md){
+                        display: block;
+                    }
+
+                    &.tab-prev {
+                        left: 0;
+                    }
+
+                    &.tab-next {
+                        right: 0;
+                    }
+
+                }
+
                 .priceplan-btn{
                     color: #101010;
                     margin: auto;
@@ -217,6 +244,13 @@
                     font-family: 'Aaux Next Light';
                     font-weight: 700;
                     width: 30%;
+
+                    @include media-breakpoint-down(md){
+                        display: none;
+                        overflow: hidden;
+                        width: 100%;
+                    }
+
                 }
                 #mid-zero{
                     border-left: 1px solid #ccc;
@@ -228,6 +262,10 @@
                     border-bottom: 3px solid #8ce600;
                     border-radius: 0;
                     margin-bottom: 0 !important;
+
+                    @include media-breakpoint-down(md){
+                        display: block;
+                    }
                 }
             }
             
