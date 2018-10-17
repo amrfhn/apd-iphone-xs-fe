@@ -1,0 +1,29 @@
+@import 'variables';
+@import 'mixins/*';
+@import 'fonts/*';
+
+/* Vendor
+// ::::::::::::: 
+*/
+@import 'vendor/*';
+
+@import 'utilities/*';
+
+
+
+/* Elements
+// ::::::::::::: 
+
+@import 'elements/*';*/
+
+/*Components
+// :::::::::::::*/
+
+@import 'components/*';
+/*
+@import 'styles/*\'; // to add styles to sitecore
+
+
+
+/* Navigation
+// ::::::::::::: */

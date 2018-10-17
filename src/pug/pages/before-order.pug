@@ -1,0 +1,74 @@
+extends ../template.pug
+
+block header
+    
+
+block content
+
+    .container
+        .progress-div
+            .progress-check-div#progress-preord
+                .progress-check#check-1 1
+            .progress-line-div
+                .progress-line#black-line
+            .progress-onhold-div#white-circ-1
+                .progress-onhold &middot;
+            .progress-onhold-div#white-circ-2
+                .progress-onhold &middot;
+
+    .container
+        .row.pre-order-container
+            
+            
+            .subheader Pre-order with Maxis
+            .header Get your new iPhone on Zerolution360
+            .description
+                span Enjoy your new device with zero worries on Zerolution360, offering 1-on-1 replacements, priority repair service, yearly phone upgrades, and more. Find out more 
+                a.click-here(href='#') here.
+            .mt-30
+            .description
+                span Pre-order your choosen device.
+            .mt-50
+            .img-div
+                .iph-1
+                    .img-wrapper(style="background-image:url('images/png/iphone-xs-preord.png');")
+                    .tagline(style="background-image:url('images/png/logo-xs.png');")
+                        span.visualHidden iPhone XS
+                .mt-30
+                .iph-1
+                    .img-wrapper(style="background-image:url('images/png/xr-12.png');top:23px;")
+                    .tagline(style="background-image:url('images/png/logo-xr.png');")
+                        span.visualHidden iPhone XS
+                      
+            .mt-50
+            .btn-div
+                .btn.btn-disabled Check Back Later
+                
+    .container-fluid
+        .row.cross-sell-container
+            h3.subheader You may also be interested in these
+            .mt-30
+            .cross-sell-tiles
+                .tile-item.col-xs-12
+                    .featured-img(style="background-image:url('images/png/1_tiles_zerolution360.jpg');")
+                    p.description Get a zero worries iPhone here
+                .tile-item.col-xs-12
+                    .featured-img(style="background-image:url('images/png/2_tiles_trade_in_up.jpg');")
+                    p.description Trade in your old phone and save up to RM2,040
+                .tile-item.col-xs-12
+                    .featured-img(style="background-image:url('images/png/3_tiles_homepage.jpg');")
+                    p.description Malaysia's No.1 4G LTE network
+
+
+
+    
+                
+
+
+
+
+
+
+
+
+block footer

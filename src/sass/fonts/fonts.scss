@@ -1,0 +1,8 @@
+//font use
+
+@include font-face('SF Pro Display','/fonts/SF-Pro-Display-Regular','initial','initial',otf);
+@include font-face('SF Pro Icon','/fonts/SF-Pro-Display-Thin','initial','initial',otf);
+
+@include font-face('Aaux Next Medium','fonts/aauxnext-md-webfont','initial','initial',woff);
+@include font-face('Aaux Next Light','fonts/aauxnext-lt-webfont','initial','initial',woff);
+@include font-face('Aaux Next Bold','fonts/aauxnext-bd-webfont','initial','initial',woff);

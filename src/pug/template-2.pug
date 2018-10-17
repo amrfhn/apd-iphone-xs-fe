@@ -1,0 +1,15 @@
+doctype html
+html(
+  lang="en"
+)
+  include regions/head.pug
+
+  body#black-background
+    block header
+
+    main.offset-menu
+      block content
+
+    block footer
+          
+    include regions/scripts.pug

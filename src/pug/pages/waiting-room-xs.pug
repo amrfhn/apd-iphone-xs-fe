@@ -1,0 +1,181 @@
+extends ../template.pug
+
+block header
+    
+
+block content
+
+    .container
+        .row.pb-10
+            .wr-title Hello. 
+            span.wr-text You're now in queue for the iPhone Xs.
+            
+    .container
+        .row.wr-row
+            .signboard-div.waiting-hall(style="background-image:url('images/png/kv.png');")
+                .signboard-wrapper
+                    .signboard-bg(style="background-image:url('images/png/signboard.png');")
+                .signboard-text
+                    .signboard-header Please do not close or refresh your browser.
+                .box-queue#desktop-box-bg(style="background-image:url('images/png/box.png');")
+                    .queue-content
+                        .queue-title You're
+                        .queue-text 87
+                        .pt-2
+                        .queue-title In a queue of
+                        .queue-text 7,340
+                .box-queue#mobile-box-bg(style="background-image:url('images/png/box-mobile.png');")
+                    .queue-content
+                        .queue-title You're
+                        .queue-text 87
+                        .pt-2
+                        .queue-title In a queue of
+                        .queue-text 7,340
+
+                .tab-div
+                    .avaibility-tab-box
+                        .tab-title-div
+                            .tab-title Check stock avaibility -
+                        .check-stock.tab-list  
+                            .tab-content-btn
+                                .btn.tab-active.model-select(data-stocktab="iphxs-tab-btn") iPhone Xs
+                                .btn.model-select(data-stocktab="iphxsmax-tab-btn") iPhone Xs Max
+                                .btn.model-select(data-stocktab="iphxr-tab-btn") iPhone Xr
+
+                        .stock-avaibility-div.stock-tab.iphxs-tab-btn
+                            table
+                                tr.item-title-avaibility
+                                    th.item-title Color
+                                    th.item-title 64GB
+                                    th.item-title 128GB
+                                    th.item-title 256GB
+                                tr.item-avaibility
+                                    td.item-content#color-white White
+                                    td.item-content.stock-phone Availabe
+                                    td.item-content.stock-phone Available
+                                    td.item-content.stock-phone Sold Out
+
+                                tr.item-avaibility
+                                    td.item-content#color-black Black
+                                    td.item-content.stock-phone#selling-fast Selling Fast
+                                    td.item-content.stock-phone Available
+                                    td.item-content.stock-phone Sold Out
+
+                                tr.item-avaibility
+                                    td.item-content#color-blue Blue
+                                    td.item-content.stock-phone Availabe
+                                    td.item-content.stock-phone Available
+                                    td.item-content.stock-phone#sold-out Sold Out
+                                
+                                tr.item-avaibility
+                                    td.item-content#color-yellow Yellow
+                                    td.item-content.stock-phone Availabe
+                                    td.item-content.stock-phone Available
+                                    td.item-content.stock-phone#sold-out Sold Out
+
+                                tr.item-avaibility
+                                    td.item-content#color-coral Coral
+                                    td.item-content.stock-phone Availabe
+                                    td.item-content.stock-phone#selling-fast Selling Fast
+                                    td.item-content.stock-phone Sold Out
+
+                                tr.item-avaibility
+                                    td.item-content#color-red Red
+                                    td.item-content.stock-phone Availabe
+                                    td.item-content.stock-phone#sold-out Sold Out
+                                    td.item-content.stock-phone#sold-out Sold Out
+
+                        //iph-xs-max
+                        .stock-avaibility-div.stock-tab.iphxsmax-tab-btn#hide
+                            table
+                                tr.item-title-avaibility
+                                    th.item-title Color
+                                    th.item-title 64GB
+                                    th.item-title 128GB
+                                    th.item-title 256GB
+                                tr.item-avaibility
+                                    td.item-content#color-white White
+                                    td.item-content.stock-phone#sold-out Sold Out
+                                    td.item-content.stock-phone Available
+                                    td.item-content.stock-phone Available
+
+                                tr.item-avaibility
+                                    td.item-content#color-black Black
+                                    td.item-content.stock-phone#selling-fast Selling Fast
+                                    td.item-content.stock-phone#selling-fast Selling Fast
+                                    td.item-content.stock-phone#selling-fast Selling Fast
+
+                                tr.item-avaibility
+                                    td.item-content#color-blue Blue
+                                    td.item-content.stock-phone Availabe
+                                    td.item-content.stock-phone Available
+                                    td.item-content.stock-phone Sold Out
+                                
+                                tr.item-avaibility
+                                    td.item-content#color-yellow Yellow
+                                    td.item-content.stock-phone#sold-out Sold Out
+                                    td.item-content.stock-phone Available
+                                    td.item-content.stock-phone Available
+
+                                tr.item-avaibility
+                                    td.item-content#color-coral Coral
+                                    td.item-content.stock-phone Availabe
+                                    td.item-content.stock-phone Available
+                                    td.item-content.stock-phone Available
+
+                                tr.item-avaibility
+                                    td.item-content#color-red Red
+                                    td.item-content.stock-phone#selling-fast Selling Fast
+                                    td.item-content.stock-phone Available
+                                    td.item-content.stock-phone Available
+                        
+                        //iph xr
+                        .stock-avaibility-div.stock-tab.iphxr-tab-btn#hide
+                            table
+                                tr.item-title-avaibility
+                                    th.item-title Color
+                                    th.item-title 64GB
+                                    th.item-title 128GB
+                                    th.item-title 256GB
+                                tr.item-avaibility
+                                    td.item-content#color-white White
+                                    td.item-content.stock-phone Availabe
+                                    td.item-content.stock-phone Available
+                                    td.item-content.stock-phone Available
+
+                                tr.item-avaibility
+                                    td.item-content#color-black Black
+                                    td.item-content.stock-phone Availabe
+                                    td.item-content.stock-phone Available
+                                    td.item-content.stock-phone Available
+
+                                tr.item-avaibility
+                                    td.item-content#color-blue Blue
+                                    td.item-content.stock-phone Availabe
+                                    td.item-content.stock-phone Available
+                                    td.item-content.stock-phone Available
+                                
+                                tr.item-avaibility
+                                    td.item-content#color-yellow Yellow
+                                    td.item-content.stock-phone Availabe
+                                    td.item-content.stock-phone Available
+                                    td.item-content.stock-phone#sold-out Sold Out
+
+                                tr.item-avaibility
+                                    td.item-content#color-coral Coral
+                                    td.item-content.stock-phone Availabe
+                                    td.item-content.stock-phone Available
+                                    td.item-content.stock-phone Available
+
+                                tr.item-avaibility
+                                    td.item-content#color-red Red
+                                    td.item-content.stock-phone Availabe
+                                    td.item-content.stock-phone#selling-fast Selling Fast
+                                    td.item-content.stock-phone Available
+
+
+
+
+
+
+block footer

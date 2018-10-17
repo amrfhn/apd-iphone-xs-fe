@@ -1,0 +1,21 @@
+{
+    "links": {
+      "mainNav": [
+        {
+          "href": "https://github.com/mimoduo/Mimogear",
+          "name": "View on Github"
+        },
+        {
+          "href": "https://github.com/mimoduo/Mimogear/tree/master/docs",
+          "name": "Documentation"
+        }
+      ],
+      "socialNav": [
+        {
+          "href": "twitter.com",
+          "name": "Twitter"
+        }
+      ]
+    }
+  }
+  

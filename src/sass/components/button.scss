@@ -1,0 +1,38 @@
+.btn{
+    font-size: 18px;
+    text-align: center;
+    border-radius:50px;
+    border:none;
+    letter-spacing: .006em;
+    cursor: pointer;
+    text-transform: none;
+    padding: 10px 20px 10px 20px;
+    transition: color 0.4s ease-in-out;
+    position: relative;
+
+    &.btn-cta{
+        background-color:#ff0092;
+        color: white;
+        &:after{
+            content: ">";
+            color: white;
+            padding-left: 3em;
+            @include media-breakpoint-down(sm){
+                padding-left: 0.5em;
+            }
+        }
+        &:hover{
+            background-color:#b80369;
+            color: rgb(236, 235, 235);
+        }
+    }
+
+    &.btn-disabled{
+        background-color: #d0d0d0;
+        &:after{
+            content: ">";
+            color: white;
+            padding-left: 1em;
+        }
+    }
+}

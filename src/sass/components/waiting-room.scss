@@ -1,0 +1,356 @@
+/*waiting room*/
+.wr-title{
+    font-size: 24px;
+    line-height: 1em;
+    display: inline;
+}
+.wr-text{
+    font-family: 'Aaux Next Light';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1em;
+    display: inline;
+
+}
+.wr-row{
+    @include media-breakpoint-down(md){
+        padding: 10px;
+    }
+}
+.signboard-div{
+    .signboard-wrapper{
+        position: relative;
+        .signboard-bg{
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 100px;
+            background-position: center;
+        }
+    }
+    .signboard-text{
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        .signboard-header{
+            position: relative;
+            font-size: 28px;
+            bottom: 62px;
+            color:#88c13c;
+            left: 10px;
+            @include media-breakpoint-down(md){
+                font-size:12px;
+                bottom: 58px;
+                left: 12px;
+            }
+        }
+    }
+    .box-queue{
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+        .queue-content{
+            //position: absolute;
+            padding: 20px;
+            @include media-breakpoint-down(sm){
+                padding: 10px;
+            }
+            .queue-title{
+                position: relative;
+                text-align: center;
+                font-size: 24px;
+                font-weight: 600;
+                color: #004b35;
+                margin-left: 82%;
+                @include media-breakpoint-down(sm){
+                    font-size: 14px;
+                    margin-left: 0;
+                }
+            }
+            .queue-text{
+                position: relative;
+                text-align: center;
+                font-size: 52px;
+                color: #ec008c;
+                margin-left: 82%;
+                line-height: 50px;
+                @include media-breakpoint-down(sm){
+                    font-size: 36px;
+                    line-height: 30px;
+                    margin-left: 0;
+                }
+                
+            }
+        }
+    }
+    #desktop-box-bg{
+        background-position: right;
+        height: 245px;
+        margin-right: 55px;
+        margin-top: 50px;
+        @include media-breakpoint-down(sm){
+            display: none;
+        }
+    }
+    #mobile-box-bg{
+        background-position: center;
+        height: 150px;
+        margin-left: 145px;
+        margin-top: 40px;
+        margin-right: 0;
+        @include media-breakpoint-up(sm){
+            display: none;
+        }
+    }
+}
+
+.waiting-hall{
+    background-size: cover;
+    height: 830px;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include media-breakpoint-down(md){
+        height: 580px;
+    }
+    .tab-div{
+        position: relative;
+        width: 610px;
+        @include media-breakpoint-down(md){
+            width: 300px;
+            margin: 80px auto 10px auto;
+        }
+        .avaibility-tab-box{
+            background-color: #fff;
+            border: 1px solid #6b9243;
+            box-shadow: -1px -5px #6b9243;
+            -webkit-box-shadow: -1px -5px #6b9243;
+            -moz-box-shadow: -1px -5px #6b9243;
+            padding: 15px 0;
+            .tab-title-div{
+                background-color: #6b9243;
+                position: absolute;
+                padding: 5px 10px;
+                letter-spacing: .05em;
+                border-radius: 10px;
+                top: -13%;
+                left: 0%;
+                @include media-breakpoint-down(md){
+                    top:-10%;
+                }
+                .tab-title{
+                    font-size: 24px;
+                    color: #fff;
+                    font-weight: 600;
+                    font-family: 'Aaux Next Light';
+                    @include media-breakpoint-down(md){
+                        font-size: 16px;
+                    }
+                }
+            }
+            .check-stock{
+                .tab-content-btn{
+                    display: flex;
+                    .model-select{
+                        color: #c7c7c7;
+                        font-size: 24px;
+                        @include media-breakpoint-down(md){
+                            font-size: 16px;
+                            padding: 8px;
+                        }
+                    }
+                    .tab-active{
+                        color: #335809;
+                    }
+                }
+            }
+            .stock-avaibility-div{              
+                table{
+                    border-collapse: collapse;
+                    width: 100%;
+                      
+                    tr.item-title-avaibility{
+                        width: 100%;
+                        margin: auto;
+                        background-color: #88c13c;
+                        th.item-title{
+                            padding: 5px 30px;
+                            color: #fff;
+                            letter-spacing: .05em;
+                            font-family: 'Aaux Next Light';
+                            @include media-breakpoint-down(md){
+                                padding: 5px 10px;
+                            }
+
+                        }
+                    }
+                    tr.item-avaibility{
+                        td.item-content{
+                            padding: 5px 30px;
+                            font-size: 18px;
+                            color: #88c13c;
+                            @include media-breakpoint-down(md){
+                                font-size: 14px;
+                                padding: 5px 10px;
+                                line-height: 15px;
+                            }
+                        }
+                        #selling-fast{
+                            color: #f0a31f;
+                            @include media-breakpoint-down(md){
+                                padding-left: 15px;
+                            }
+                        }
+                        #sold-out{
+                            color: #ec008c;
+                            @include media-breakpoint-down(md){
+                                padding-left: 15px;
+                            }
+                        }
+                        #color-yellow{
+                            color: #004b35;
+                            @include media-breakpoint-down(md){
+                                padding-left: 25px;
+                            }
+                            &:before{
+                                content: '';
+                                height: 15px;
+                                width: 15px;
+                                background-color: #f9d044;
+                                border-radius: 50%;
+                                display: inline-block;
+                                vertical-align: middle;
+                                margin-right: 10px;
+                                margin-left: -20px;
+                                @include media-breakpoint-down(md){
+                                    height: 15px;
+                                    width: 15px;
+                                    margin-right: 5px;
+                                    margin-left: -20px;
+                                }
+                            }
+                        }
+                        #color-coral{
+                            color: #004b35;
+                            @include media-breakpoint-down(md){
+                                padding-left: 25px;
+                            }
+                            &:before{
+                                content: '';
+                                height: 15px;
+                                width: 15px;
+                                background-color: #f85b49;
+                                border-radius: 50%;
+                                display: inline-block;
+                                vertical-align: middle;
+                                margin-right: 10px;
+                                margin-left: -20px;
+                                @include media-breakpoint-down(md){
+                                    height: 15px;
+                                    width: 15px;
+                                    margin-right: 5px;
+                                    margin-left: -20px;
+                                }
+                            }
+                        }
+                        #color-red{
+                            color: #004b35;
+                            @include media-breakpoint-down(md){
+                                padding-left: 25px;
+                            }
+                            &:before{
+                                content: '';
+                                height: 15px;
+                                width: 15px;
+                                background-color: #940110;
+                                border-radius: 50%;
+                                display: inline-block;
+                                vertical-align: middle;
+                                margin-right: 10px;
+                                margin-left: -20px;
+                                @include media-breakpoint-down(md){
+                                    height: 15px;
+                                    width: 15px;
+                                    margin-right: 5px;
+                                    margin-left: -20px;
+                                }
+                            }
+                        }
+                        #color-blue{
+                            color: #004b35;
+                            @include media-breakpoint-down(md){
+                                padding-left: 25px;
+                            }
+                            &:before{
+                                content: '';
+                                height: 15px;
+                                width: 15px;
+                                background-color: #43a9e2;
+                                border-radius: 50%;
+                                display: inline-block;
+                                vertical-align: middle;
+                                margin-right: 10px;
+                                margin-left: -20px;
+                                @include media-breakpoint-down(md){
+                                    height: 15px;
+                                    width: 15px;
+                                    margin-right: 5px;
+                                    margin-left: -20px;
+                                }
+                            }
+                        }
+                        #color-black{
+                            color: #004b35;
+                            @include media-breakpoint-down(md){
+                                padding-left: 25px;
+                            }
+                            &:before{
+                                content: '';
+                                height: 15px;
+                                width: 15px;
+                                background-color: #1b1b1c;
+                                border-radius: 50%;
+                                display: inline-block;
+                                vertical-align: middle;
+                                margin-right: 10px;
+                                margin-left: -20px;
+                                @include media-breakpoint-down(md){
+                                    height: 15px;
+                                    width: 15px;
+                                    margin-right: 5px;
+                                    margin-left: -20px;
+                                }
+                            }
+                        }
+                        #color-white{
+                            color: #004b35;
+                            @include media-breakpoint-down(md){
+                                padding-left: 25px;
+                            }
+                            &:before{
+                                content: '';
+                                height: 15px;
+                                width: 15px;
+                                background-color: #f6f6f6;
+                                border: 1px solid #ccc;
+                                border-radius: 50%;
+                                display: inline-block;
+                                vertical-align: middle;
+                                margin-right: 10px;
+                                margin-left: -20px;
+                                @include media-breakpoint-down(md){
+                                    height: 15px;
+                                    width: 15px;
+                                    margin-right: 5px;
+                                    margin-left: -20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            #hide{
+                display: none;
+                overflow: hidden;
+            }
+        }
+    }
+}

@@ -1,0 +1,220 @@
+.progress-div{
+    #progress-preord{
+        left: 36%;
+        @include media-breakpoint-down(md){
+            left: 22%;
+            top: -18px;
+        }
+        #check-1{
+
+        }
+    }
+    #white-circ-1{
+        left: 49%;
+        background-color:#4d4d4d;
+        width: 10px;
+        height: 10px;
+        top: -7px;
+        .progress-onhold{
+            color: #4d4d4d;
+            top: -25%;
+        }
+    }
+    #white-circ-2{
+        left: 62%;
+        background-color:#4d4d4d;
+        width: 10px;
+        height: 10px;
+        top: -7px;
+        @include media-breakpoint-down(md){
+            left: 72%;
+        }
+        .progress-onhold{
+            color: #4d4d4d;
+            top: -25%;
+        }
+        
+    }    
+}
+
+.pre-order-container{
+    margin: auto;
+    background-color: #fbfbfb;
+    .progress-check-div{
+        position: absolute;
+        display: flex;
+        left: 34%;
+        top: 10%;
+        justify-content: center;
+        background-color: #8ce600;
+        width: 35px;
+        height: 36px;
+        text-align: center;
+        border-radius: 50%;
+        padding: 2px;
+        z-index: 3;         
+        @include media-breakpoint-down(sm){
+            left: 15%;
+            top: 7.5%; 
+        }
+                
+        .progress-check{
+            position: relative;
+            color: black;
+            border-radius: 50%;
+            border: 3px solid #000;
+            width: 23px;
+            height: 24px;
+            top: 9%;   
+        }
+    }
+    
+
+    .subheader{
+        font-size: 24px;
+        line-height: 1.16667;
+        font-weight: 400;
+        letter-spacing: .009em;
+        margin-bottom: 1em;
+        text-align: center;
+        @include media-breakpoint-down(md){
+            font-size: 17px;
+        }
+        
+    }
+    .header{
+        font-size: 30px;
+        line-height: 1.16667;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        margin-bottom: 0.5em;
+        margin-top: 1em;
+        text-align: center;
+    }
+    
+    .description{
+        color: #333;
+        font-size: 18px;
+        line-height: 1.16667;
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: .009em;
+        width: 820px;
+        margin: auto;
+        @include media-breakpoint-down(md){
+            font-size: 17px;
+            width: 100%;
+        }
+        a.click-here{
+            color: #8ce600;
+        }
+    }
+    .img-div{
+        display: flex;
+        justify-content: center;
+        @include media-breakpoint-down(md){
+            display: block;
+        }
+        .iph-1{
+            margin-bottom: auto;
+            .img-wrapper{
+                position: relative;
+                text-align: center;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 300px;
+                @include media-breakpoint-down(md){
+                    height: 200px;
+                }
+            }
+        }
+        .tagline{
+            width: 167px;
+            height: 28px;
+            background-size: 167px 28px;
+            background-repeat: no-repeat;
+            background-image: url('https://www.apple.com/v/iphone-xs/b/images/overview/hero_logo_large.svg');
+            margin: auto;
+            margin-top: 2em;
+            .visualHidden{
+                position: absolute;
+                clip: rect(1px 1px 1px 1px);
+                clip: rect(1px, 1px, 1px, 1px);
+                -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+                clip-path: inset(0px 0px 99.9% 99.9%);
+                overflow: hidden;
+                height: 1px;
+                width: 1px;
+                padding: 0;
+                border: 0;
+                text-align: center;
+            }
+        }
+    }
+    .btn-div{
+        margin: auto;
+        width: 100%;
+        display:flex;
+        justify-content:center;
+        @include media-breakpoint-up(md){
+            width: 500px;
+            
+        }
+        .btn-cta{
+            margin:15px 15px;
+            position: relative;
+            @include media-breakpoint-down(sm){
+                font-size: 14px;
+                margin:10px 5px;
+            }
+        }
+        .btn-disabled{
+            background-color: #d0d0d0;
+            color: #fff;
+        }
+    }
+}
+
+.cross-sell-container{
+    background-color: #e2edf3;
+        
+    .subheader{
+        color: #222222;
+        text-align: center;
+    }
+    .cross-sell-tiles{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex: wrap;
+        @include media-breakpoint-down(sm){
+            display: block;
+        }
+    
+        .tile-item{
+            background-color: #fff;
+            margin: 10px 10px;
+            width: 260px;
+            @include media-breakpoint-down(md){
+                width: 100%;
+            }
+            .featured-img{
+                position: relative;
+                text-align: center;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 230px;
+            }
+            .description{
+                color: #222222;
+                padding: 5px 20px 20px 10px;
+                font-size: 14px;
+                margin: auto;
+                font-family: 'Aaux Next Light';
+                font-weight: 600;
+            }
+        }
+    }
+}

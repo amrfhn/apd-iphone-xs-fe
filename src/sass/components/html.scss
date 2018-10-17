@@ -1,0 +1,32 @@
+body{
+    color: #000;
+	font-size: 17px;
+    font-family: "Aaux Next Bold";
+    letter-spacing: .005em;
+	line-height: 1.5;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;  
+}
+#black-background{
+    background-color: #000;
+    color: #ffe5db;
+}
+
+section{
+    padding: 70px 0;
+}
+.row{
+    padding: 50px 155px;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: center;
+    @include media-breakpoint-down(sm){
+        padding: 25px 30px;
+    }
+}
+
+a{
+    color: #000;
+}

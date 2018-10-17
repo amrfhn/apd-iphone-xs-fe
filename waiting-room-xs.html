@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone XS</title>
+    <meta name="name" content=""><link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/main.css"  type="text/css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    <main class="offset-menu">
+      <div class="container">
+        <div class="row pb-10">
+          <div class="wr-title">Hello. </div><span class="wr-text">You're now in queue for the iPhone Xs.</span>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row wr-row">
+          <div class="signboard-div waiting-hall" style="background-image:url('images/png/kv.png');">
+            <div class="signboard-wrapper">
+              <div class="signboard-bg" style="background-image:url('images/png/signboard.png');"></div>
+            </div>
+            <div class="signboard-text">
+              <div class="signboard-header">Please do not close or refresh your browser.</div>
+            </div>
+            <div class="box-queue" id="desktop-box-bg" style="background-image:url('images/png/box.png');">
+              <div class="queue-content">
+                <div class="queue-title">You're</div>
+                <div class="queue-text">87</div>
+                <div class="pt-2"></div>
+                <div class="queue-title">In a queue of</div>
+                <div class="queue-text">7,340</div>
+              </div>
+            </div>
+            <div class="box-queue" id="mobile-box-bg" style="background-image:url('images/png/box-mobile.png');">
+              <div class="queue-content">
+                <div class="queue-title">You're</div>
+                <div class="queue-text">87</div>
+                <div class="pt-2"></div>
+                <div class="queue-title">In a queue of</div>
+                <div class="queue-text">7,340</div>
+              </div>
+            </div>
+            <div class="tab-div">
+              <div class="avaibility-tab-box">
+                <div class="tab-title-div">
+                  <div class="tab-title">Check stock avaibility -</div>
+                </div>
+                <div class="check-stock tab-list"> 
+                  <div class="tab-content-btn">
+                    <div class="btn tab-active model-select" data-stocktab="iphxs-tab-btn">iPhone Xs</div>
+                    <div class="btn model-select" data-stocktab="iphxsmax-tab-btn">iPhone Xs Max</div>
+                    <div class="btn model-select" data-stocktab="iphxr-tab-btn">iPhone Xr</div>
+                  </div>
+                </div>
+                <div class="stock-avaibility-div stock-tab iphxs-tab-btn">
+                  <table>
+                    <tr class="item-title-avaibility">
+                      <th class="item-title">Color</th>
+                      <th class="item-title">64GB</th>
+                      <th class="item-title">128GB</th>
+                      <th class="item-title">256GB</th>
+                    </tr>
+                    <tr class="item-avaibility">
+                      <td class="item-content" id="color-white">White</td>
+                      <td class="item-content stock-phone">Availabe</td>
+                      <td class="item-content stock-phone">Available</td>
+                      <td class="item-content stock-phone">Sold Out</td>
+                    </tr>
+                    <tr class="item-avaibility">
+                      <td class="item-content" id="color-black">Black</td>
+                      <td class="item-content stock-phone" id="selling-fast">Selling Fast</td>
+                      <td class="item-content stock-phone">Available</td>
+                      <td class="item-content stock-phone">Sold Out</td>
+                    </tr>
+                    <tr class="item-avaibility">
+                      <td class="item-content" id="color-blue">Blue</td>
+                      <td class="item-content stock-phone">Availabe</td>
+                      <td class="item-content stock-phone">Available</td>
+                      <td class="item-content stock-phone" id="sold-out">Sold Out</td>
+                    </tr>
+                    <tr class="item-avaibility">
+                      <td class="item-content" id="color-yellow">Yellow</td>
+                      <td class="item-content stock-phone">Availabe</td>
+                      <td class="item-content stock-phone">Available</td>
+                      <td class="item-content stock-phone" id="sold-out">Sold Out</td>
+                    </tr>
+                    <tr class="item-avaibility">
+                      <td class="item-content" id="color-coral">Coral</td>
+                      <td class="item-content stock-phone">Availabe</td>
+                      <td class="item-content stock-phone" id="selling-fast">Selling Fast</td>
+                      <td class="item-content stock-phone">Sold Out</td>
+                    </tr>
+                    <tr class="item-avaibility">
+                      <td class="item-content" id="color-red">Red</td>
+                      <td class="item-content stock-phone">Availabe</td>
+                      <td class="item-content stock-phone" id="sold-out">Sold Out</td>
+                      <td class="item-content stock-phone" id="sold-out">Sold Out</td>
+                    </tr>
+                  </table>
+                </div>
+                <!--iph-xs-max-->
+                <div class="stock-avaibility-div stock-tab iphxsmax-tab-btn" id="hide">
+                  <table>
+                    <tr class="item-title-avaibility">
+                      <th class="item-title">Color</th>
+                      <th class="item-title">64GB</th>
+                      <th class="item-title">128GB</th>
+                      <th class="item-title">256GB</th>
+                    </tr>
+                    <tr class="item-avaibility">
+                      <td class="item-content" id="color-white">White</td>
+                      <td class="item-content stock-phone" id="sold-out">Sold Out</td>
+                      <td class="item-content stock-phone">Available</td>
+                      <td class="item-content stock-phone">Available</td>
+                    </tr>
+                    <tr class="item-avaibility">
+                      <td class="item-content" id="color-black">Black</td>
+                      <td class="item-content stock-phone" id="selling-fast">Selling Fast</td>
+                      <td class="item-content stock-phone" id="selling-fast">Selling Fast</td>
+                      <td class="item-content stock-phone" id="selling-fast">Selling Fast</td>
+                    </tr>
+                    <tr class="item-avaibility">
+                      <td class="item-content" id="color-blue">Blue</td>
+                      <td class="item-content stock-phone">Availabe</td>
+                      <td class="item-content stock-phone">Available</td>
+                      <td class="item-content stock-phone">Sold Out</td>
+                    </tr>
+                    <tr class="item-avaibility">
+                      <td class="item-content" id="color-yellow">Yellow</td>
+                      <td class="item-content stock-phone" id="sold-out">Sold Out</td>
+                      <td class="item-content stock-phone">Available</td>
+                      <td class="item-content stock-phone">Available</td>
+                    </tr>
+                    <tr class="item-avaibility">
+                      <td class="item-content" id="color-coral">Coral</td>
+                      <td class="item-content stock-phone">Availabe</td>
+                      <td class="item-content stock-phone">Available</td>
+                      <td class="item-content stock-phone">Available</td>
+                    </tr>
+                    <tr class="item-avaibility">
+                      <td class="item-content" id="color-red">Red</td>
+                      <td class="item-content stock-phone" id="selling-fast">Selling Fast</td>
+                      <td class="item-content stock-phone">Available</td>
+                      <td class="item-content stock-phone">Available</td>
+                    </tr>
+                  </table>
+                </div>
+                <!--iph xr-->
+                <div class="stock-avaibility-div stock-tab iphxr-tab-btn" id="hide">
+                  <table>
+                    <tr class="item-title-avaibility">
+                      <th class="item-title">Color</th>
+                      <th class="item-title">64GB</th>
+                      <th class="item-title">128GB</th>
+                      <th class="item-title">256GB</th>
+                    </tr>
+                    <tr class="item-avaibility">
+                      <td class="item-content" id="color-white">White</td>
+                      <td class="item-content stock-phone">Availabe</td>
+                      <td class="item-content stock-phone">Available</td>
+                      <td class="item-content stock-phone">Available</td>
+                    </tr>
+                    <tr class="item-avaibility">
+                      <td class="item-content" id="color-black">Black</td>
+                      <td class="item-content stock-phone">Availabe</td>
+                      <td class="item-content stock-phone">Available</td>
+                      <td class="item-content stock-phone">Available</td>
+                    </tr>
+                    <tr class="item-avaibility">
+                      <td class="item-content" id="color-blue">Blue</td>
+                      <td class="item-content stock-phone">Availabe</td>
+                      <td class="item-content stock-phone">Available</td>
+                      <td class="item-content stock-phone">Available</td>
+                    </tr>
+                    <tr class="item-avaibility">
+                      <td class="item-content" id="color-yellow">Yellow</td>
+                      <td class="item-content stock-phone">Availabe</td>
+                      <td class="item-content stock-phone">Available</td>
+                      <td class="item-content stock-phone" id="sold-out">Sold Out</td>
+                    </tr>
+                    <tr class="item-avaibility">
+                      <td class="item-content" id="color-coral">Coral</td>
+                      <td class="item-content stock-phone">Availabe</td>
+                      <td class="item-content stock-phone">Available</td>
+                      <td class="item-content stock-phone">Available</td>
+                    </tr>
+                    <tr class="item-avaibility">
+                      <td class="item-content" id="color-red">Red</td>
+                      <td class="item-content stock-phone">Availabe</td>
+                      <td class="item-content stock-phone" id="selling-fast">Selling Fast</td>
+                      <td class="item-content stock-phone">Available</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main><script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+.error-container{
+    
+    .img-wrapper{
+        position: relative;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        @include media-breakpoint-down(md){
+            height: 200px;
+        }
+    }
+    .header{
+        font-size: 30px;
+        line-height: 1.16667;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        margin-bottom: 0.5em;
+        margin-top: 1em;
+        text-align: center;
+        @include media-breakpoint-down(sm){
+            font-size: 22px;
+        }
+    }
+    .tagline{
+        width: 167px;
+        height: 28px;
+        background-size: 167px 28px;
+        background-repeat: no-repeat;
+        background-image: url('https://www.apple.com/v/iphone-xs/b/images/overview/hero_logo_large.svg');
+        margin: auto;
+        margin-top: 2em;
+        .visualHidden{
+            position: absolute;
+            clip: rect(1px 1px 1px 1px);
+            clip: rect(1px, 1px, 1px, 1px);
+            -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+            clip-path: inset(0px 0px 99.9% 99.9%);
+            overflow: hidden;
+            height: 1px;
+            width: 1px;
+            padding: 0;
+            border: 0;
+            text-align: center;
+        }
+    }
+    .description{
+        color: #ffe5db;
+        font-size: 18px;
+        line-height: 1.16667;
+        font-weight: 400;
+        text-align: center;
+        padding:0  50px;
+        letter-spacing: .009em;
+        @include media-breakpoint-down(md){
+            font-size: 17px;
+            padding:0;
+        }
+    }
+}

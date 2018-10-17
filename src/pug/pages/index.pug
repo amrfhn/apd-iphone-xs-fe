@@ -1,0 +1,305 @@
+extends ../template-2.pug
+
+block header
+    
+
+block content
+
+    .container
+        .progress-div
+            .progress-line-div
+                .progress-line#black-line
+            .progress-onhold-div#blackxr
+                .progress-onhold#right-black &#x2713;
+            .progress-check-div#progress-iphxs-on
+                .progress-check#check-black 2
+            .progress-onhold-div#progress-iphxs-check
+                .progress-onhold#not-check &middot;
+
+    .container
+        .row
+            .col-12.hero-container
+                .col-xs-12.device-content
+                    .hero-img-wrapper
+                        .hero-img#desktop(style="background-image:url('images/png/devices.png');")
+                        .hero-img#mobile(style="background-image:url('images/png/devices-onmobile.png');")
+
+                    
+                    .headline1(style="background-image:url('images/png/logo-iphone-xs.png');")
+                        span.visualHidden iPhone XS
+                    .subTagline Welcome to the big screens.
+                    .descTagline Super Retina in two sizes — including the largest display ever on an iPhone. Even faster Face ID. The smartest, most powerful chip in a smartphone. And a breakthrough dual-camera system. iPhone XS is everything you love about iPhone. Taken to the extreme.
+
+                    .btn-div
+                        .btn.btn-cta.button-po.isSticky(style="visibility:hidden;") Pre-order Now
+                        .btn.btn-cta.button-po Pre-order Now
+
+    
+    .container
+        .row.first-section
+            .col-12.video-container(style="background-image:url('images/png/design_film_large.jpg');")
+                a.text-video-wrapper(href="#")
+                    .title The new generation of iPhone
+                    span.click-to-watch Watch the film
+
+    .container
+        .row
+            .col-12.manifesto-wrapper
+                .manifesto-headline Super Retina. In big and bigger.
+                .transparent-mask#texture-1(style="background-image:url('images/png/texture-1.jpg');") The custom OLED displays on iPhone XS deliver the most accurate colour in the industry, HDR and true blacks. And iPhone XS Max has our largest display ever on an iPhone.
+            .btn-div
+                .btn.btn-1 Learn more
+    
+    .container
+        .row
+            .iphxs-overview-div
+                .text-wrapper#left
+                    .text-content(style="color:#fff;") iPhone XS Max 
+                    .text-content.d-inline 6.5″ display
+                    sup.d-inline
+                        a.sup1(href="#") 1
+                .ph-img-wrapper#left-img
+                    .ph-img(style="background-image:url('images/png/iphone-xs-max.jpg'); height:340px;")
+                    .text-wrapper#mobile
+                        .text-content(style="color:#fff;") iPhone XS Max 
+                        .text-content.d-inline 6.5″ display
+                        sup.d-inline
+                            a.sup1(href="#") 1
+                .ph-img-wrapper#right-img
+                    .ph-img(style="background-image:url('images/png/iphone-xs-max.jpg'); height:290px; background-size:contain;")
+                    .text-wrapper#mobile
+                        .text-content(style="color:#fff;") iPhone XS
+                        .text-content.d-inline 5.8″ display
+                        sup.d-inline
+                            a.sup1(href="#") 1
+                .text-wrapper#right
+                    .text-content(style="color:#fff;") iPhone XS
+                    .text-content.d-inline 5.8″ display
+                    sup.d-inline
+                        a.sup1(href="#") 1
+
+    .container
+        .row
+            .compare-div
+                .title-wrapper
+                    .compare-title All screen makes all the difference.
+                .phn-compare-wrapper
+                    .ph-compare
+                        .ph-compare-bg(style="background-image:url('images/png/iphone-xs-max-1.png');")
+                        .phn-name iPhone Xs Max
+                    .ph-compare
+                        .ph-compare-bg1.ip-8plus(style="background-image:url('images/png/iphone-8plus.jpg');")
+                        .ph-compare-bg1.ip-8#hide-ip(style="background-image:url('images/png/iphone-8.jpg');")
+                        .select-ip8.d-flex
+                            .btn.phn-name1.ip8-active#iph8plus(data-showiph8="ip-8plus") iPhone 8 Plus
+                            .middot1 &middot;
+                            .btn.phn-name1#iph8(data-showiph8="ip-8") iPhone 8
+
+                    .ph-compare
+                        .ph-compare-bg#ip-xs-small(style="background-image:url('images/png/iphone-xs-small.png');")
+                        .phn-name#ipxs-sml iPhone Xs
+                    
+    .container
+        .row
+            .col-12.manifesto-wrapper
+                .manifesto-headline Exceptional materials. 
+                .transparent-mask#texture-1(style="background-image:url('images/png/texture-2.jpg');background-size: cover;") The most durable glass ever in a smartphone. A beautiful new gold finish, achieved with an atomic-level process. Precision-machined, surgical-grade stainless steel bands. And a new level of water and dust resistance.
+    
+    .container
+        .row#gradient-container2
+            .material-div-1
+                .exc-material-1(style="background-image:url('images/png/fit_finish_gold_small_2x.png');")
+
+               
+    .container
+        .row#gradient-container1
+            .material-div
+                .material-content#left-top
+                    .mat-title Surgical-grade stainless steel. 
+                    .desc-material We use a special Apple-designed alloy that’s precisely machined to create structural bands in three finishes.
+                    .mat-title#left-bot Wireless charging.  
+                    .desc-material The glass back allows iPhone XS to charge wirelessly.3 And it charges even faster than iPhone X.
+                .exc-material(style="background-image:url('images/png/fit_finish_gold_large.png');")
+                .material-content#right-mat               
+                    .mat-title PVD colour process.
+                    .desc-material Gold and space grey finishes use an advanced physical vapour deposition process on the stainless steel bands for colours and reflectivity that beautifully complement the glass.                  
+                
+
+
+    .container
+        .row
+            .col-12.manifesto-wrapper
+                .manifesto-headline Advanced Face ID.
+                .transparent-mask#texture-1(style="background-image:url('images/png/texture-3.jpg');background-size: cover;background-position: center;") Security is simple when your face is your password. You can unlock your iPhone and log in to apps, accounts and more with a glance. It’s the most secure facial authentication ever in a smartphone. And now it’s even faster.
+            .btn-div
+                .btn.btn-1 Learn more
+            .bg-img-wrapper
+                .bg-manifesto(style="background-image:url('images/png/screen_image_large.png');")
+            
+    .container
+        .row
+            .col-12.manifesto-wrapper
+                .manifesto-headline Intelligent A12 Bionic.
+                .transparent-mask#texture-1(style="background-image:url('images/png/texture-4.jpg');background-size: cover;background-position: center;") This is the smartest, most powerful chip in a smartphone with our next-generation Neural Engine. For amazing augmented reality experiences. Incredible portraits with Depth Control. And speed and fluidity in everything you do.
+            .btn-div
+                .btn.btn-1 Learn more
+
+    .container
+        .row.bio-mob-div
+            .bionic-mobile
+                .bio-mobile(style="background-image:url('images/png/chip_large.jpg');")
+                .bio-content-mobile
+                    .chip-mob A12 Bionic
+
+    .container
+        .row.bionic-div
+            .bio-wrapper
+                .bio-content-div
+                    .bio-content
+                        .small-content Up to
+                        .large-content  50% faster
+                        .small-content  graphics performance
+                    .bio-content
+                        .small-content Up to
+                        .large-content  15% faster
+                        .small-content  performance cores
+                    .bio-content
+                        .small-content Up to
+                        .large-content  50% lower
+                        .small-content  power usage in efficiency cores
+                .bio-content-div
+                    .chip-large A12 Bionic
+                .bio-content-div
+                    .bio-content
+                        .small-content 8-core
+                        .large-content Neural Engine
+                    .bio-content
+                        .small-content Enhanced
+                        .large-content  Image Signal Processor
+                    .bio-content
+                        .small-content Advanced
+                        .large-content  Performance Controller
+
+
+    .container
+        .row.fix-bg(style="background-image:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('images/png/camera_hero_large.png')")
+            .col-12.manifesto-wrapper.pt-100
+                .manifesto-headline Breakthrough dual-camera system.
+                .transparent-mask#texture-1(style="background-image:url('images/png/copy_texture_7_large.jpg');background-size: cover;") The world’s most popular camera is defining a new era of photography. Where an innovative sensor works with the ISP and Neural Engine to help you create photos like never before.
+            .btn-div
+                .btn.btn-1 Learn more
+
+    
+
+
+
+    .container
+        .row
+            .beaut-photo-div
+                .caption-div
+                    .title Smart HDR.
+                    .desc New secondary frames, a faster sensor and the powerful A12 Bionic chip bring more highlight and shadow detail to your photos.
+                .bt-photo(style="background-image:url('images/png/camera_1_large.jpg');")
+            
+            .beaut-photo-div
+                .caption-div
+                    .title Larger and deeper pixels.
+                    .desc A new sensore creates better image fidelity, greater colour accuracy and reduced noise in low light shots.
+                .bt-photo(style="background-image:url('images/png/camera_2_large.jpg');")
+
+            .beaut-photo-div
+                .caption-div
+                    .title Enhanced bokeh effect.
+                    .desc Potrait mode photos look even more professional thanks to a sophisticated background blur.
+                .bt-photo(style="background-image:url('images/png/camera_3_large.jpg');")
+
+            .beaut-photo-div#dept-div
+                .caption-div#dept-cont
+                    .title All-new Depth Control.
+                    .desc Now you can adjust the depth of field in potraits after you shoot.
+                .bt-photo(style="background-image:url('images/png/3_iphone_xs.png');")
+    
+    .container
+        .row
+            .material-div-1
+                .exc-material-1(style="background-image:url('images/png/5_iphone_xs.png');")
+
+
+
+    .container
+        .row#gradient-container1
+            .cam-spec-title Dual 12MP rear cameras
+            .camera-spec-div 
+                .cam-content
+                    .cam-title ƒ/1.8 
+                    .desc-cam wide-angle lens
+
+                    .cam-title ƒ/2.4
+                    .desc-cam telephoto lens
+
+                    .cam-title 2x faster sensor
+                    .desc-cam for Smart HDR across your photos
+
+                    .cam-title#desk-cam Portrait mode
+                    .desc-cam#desk-cam  with Depth Control
+
+                    .cam-title#desk-cam  4K video
+                    .desc-cam#desk-cam  up to 60 fps
+
+                    .cam-title#desk-cam  TrueDepth camera
+                    .mb-lg-30
+                    .cam-title#desk-cam  ƒ/2.2
+                    .desc-cam#desk-cam  wide-angle lens
+
+                    .cam-title#desk-cam  1080p HD video
+                    .desc-cam#desk-cam  up to 80 fps
+                    
+
+                .cam-content#mobile-cam
+                    .cam-title Portrait mode
+                    .desc-cam with Depth Control
+
+                    .cam-title 4K video
+                    .desc-cam up to 60 fps
+                
+                .cam-bg(style="background-image:url('images/png/cam-power-1.png');") 
+    .container
+        .row
+            .material-div-1
+                .exc-material-1(style="background-image:url('images/png/front-cam.png');")
+
+    .container
+        .row.tru-dep#gradient-container2
+            .cam-spec-title True depth camera
+            .camera-spec-div 
+                .cam-content#mobile-cam
+                    .cam-title ƒ/2.2
+                    .desc-cam wide angle lens
+                    .cam-title Potrait mode
+                    .desc-cam with Depth Control
+                .cam-content#mobile-cam
+                    .cam-title 1080p HD video
+                    .desc-cam up to 60fps
+
+    .container
+        .row
+            .col-12.manifesto-wrapper
+                .manifesto-headline And this.
+                .transparent-mask#texture-1(style="background-image:url('images/png/copy_texture_7_large.jpg');background-size: cover;") iPhone XS delivers 4G LTE Advanced for super-fast download speeds.5 And up to 512GB of storage, making this our highest-capacity iPhone yet.
+            .bg-img-wrapper
+                .bg-manifesto#live-gig(style="background-image:url('images/png/gigabit_lte_large.jpg');")
+
+    .container
+        .row
+            .col-12.manifesto-wrapper
+                .manifesto-headline No other phone is like iPhone.
+                .transparent-mask#texture-1(style="background-image:url('images/png/copy_texture_6_large.jpg');background-size: cover;") Every decision that goes into iPhone makes it stand apart. From the way it’s made, to the way we build in privacy and security from the start, to the innovative ways we recycle its components.
+            .btn-div
+                .btn.btn-1 Learn more
+                
+
+
+
+
+
+block footer

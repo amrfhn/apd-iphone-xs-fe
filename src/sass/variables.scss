@@ -1,0 +1,49 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+) !default;
+
+$content-spacing-x: 55px;
+$content-spacing-x-mobile: 20px;
+$content-spacing-t: 50px;
+$content-spacing-b: 50px;
+
+
+$grid-columns: 12 !default;
+
+$transition-base: all .2s ease-in-out !default;
+
+$skew-deg: 8.6deg;
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3),
+  10: 10px,
+  15: 15px,
+  20: 20px,
+  25: 25px,
+  30: 30px,
+  35: 35px,
+  40: 40px,
+  50: 50px,
+  55: 55px,
+  60: 60px,
+  80: 80px,
+  100: 100px,
+  110: 110px
+);

@@ -1,0 +1,3291 @@
+extends ../template.pug
+
+block header
+    
+
+block content
+    
+    .container
+        .progress-div
+            .progress-line-div
+                .progress-line
+            .progress-onhold-div#mid
+                .progress-onhold &#x2713;
+            .progress-onhold-div#right
+                .progress-onhold &#x2713;
+            .progress-check-div
+                .progress-check 3
+                
+        .header-div
+            h2.header Find out how much your new iPhone costs
+            p.subheader Select your device model to view prices.
+
+
+    .container
+        .row.device-price-container
+            .col-12.device-selection
+                .col-xs-12.col-md-4.device-overview
+                    .img-div
+                        .img-wrapper(style="background-image:url('images/png/xs-1.png');")
+                    .tagline#tagline-iphxs(style="background-image:url('images/png/logo-xs.png');")
+                        span.visualHidden iPhone XS
+                    .device-select#device-btn
+                        .btn.active.slide-toggle(data-pricetab="iphxs-64") 64GB
+                        .btn.slide-toggle(data-pricetab="iphxs-256") 256GB
+                        .btn.slide-toggle(data-pricetab="iphxs-512") 512GB
+                
+                .col-xs-12.col-md-4.device-overview.mt-xs-70
+                    .img-div#hide-img
+                        .img-wrapper(style="background-image:url('images/png/xs-max-1.png');")
+                    .tagline#tagline-iphxs(style="background-image:url('images/png/logo-max.png');")
+                        span.visualHidden iPhone XS Max
+                    .device-select
+                        .btn.slide-toggle(data-pricetab="iphxs-max-64") 64GB
+                        .btn.slide-toggle(data-pricetab="iphxs-max-256") 256GB
+                        .btn.slide-toggle(data-pricetab="iphxs-max-512") 512GB
+                        
+
+                .col-xs-12.col-md-4.device-overview
+                    .img-div
+                        .img-wrapper(style="background-image:url('images/png/xr-1.png');")
+                    .tagline#tagline-iphxs(style="background-image:url('images/png/logo-xr.png');")
+                        span.visualHidden iPhone XR
+                    .device-select
+                        .btn.slide-toggle(data-pricetab="iphxr-64") 64GB
+                        .btn.slide-toggle(data-pricetab="iphxr-256") 256GB
+                        .btn.slide-toggle(data-pricetab="iphxr-512") 512GB
+
+        .header-div
+            h2.header Choose a plan to go with your new iPhone
+
+        .row.price-overview-div
+            .price-overview
+                
+                //iph xs 64gb
+                .iphxs-64.price-tab
+                    .three-tabs-btn
+                        .btn.btn-zerolution.priceplan-btn.plan-active(data-priceplan="zerolution360") Zerolution360
+                        .btn.btn-zeroreg.priceplan-btn#mid-zero(data-priceplan="zerolution") Zerolution
+                        .btn.btn-norm.priceplan-btn(data-priceplan="normal-contract") Normal Contract
+                    //zero-360-xs-64gb
+                    .plan-tab.zerolution360.isActive
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                span.mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+                    //zero-xs-64gb                    
+                    .plan-tab.zerolution
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                span.mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 40GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+                    
+                    
+                    //nc-xs-64gb                                        
+                    .plan-tab.normal-contract
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                span.mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 40GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                    .bot-text iPhone XS on Zerolution360 is exclusive for Maxis customers only
+
+                    .bot-title Check if your desired model is available
+                    
+                    .stock-check-mobile
+                        .three-types-btn
+                            .btn.btn-64.mobiletab-btn.mobiletab-active.stock-active(data-mobiletab="gb64-stock-xs") 64GB
+                            .btn.btn-256.mobiletab-btn#mid-zero(data-mobiletab="gb256-stock-xs") 256GB
+                            .btn.btn-512.mobiletab-btn(data-mobiletab="gb512-stock-xs") 512GB
+                        .stock-check-mob
+                            .stocktable.gb64-stock-xs
+                                .title-wrap
+                                    .title Color
+                                    .title 64GB
+                                .content-wrap
+                                    .text#color-white White
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-black Black
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-blue Blue
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-yellow Yellow
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-coral Coral
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-red Red
+                                    .text#limited Limited
+                            .stocktable.gb256-stock-xs#hide-first
+                                .title-wrap
+                                    .title Color
+                                    .title 256GB
+                                .content-wrap
+                                    .text#color-white White
+                                    .text#limited Limited
+                                .content-wrap
+                                    .text#color-black Black
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-blue Blue
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-yellow Yellow
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-coral Coral
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-red Red
+                                    .text#limited Limited
+
+                            .stocktable.gb512-stock-xs#hide-first
+                                .title-wrap
+                                    .title Color
+                                    .title 512GB
+                                .content-wrap
+                                    .text#color-white White
+                                    .text#limited Limited
+                                .content-wrap
+                                    .text#color-black Black
+                                    .text#limited Limited
+                                .content-wrap
+                                    .text#color-blue Blue
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-yellow Yellow
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-coral Coral
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-red Red
+                                    .text#limited Limited       
+
+                    .stock-check-div
+                        table
+                            tr.item-title-avaibility
+                                th.item-title Color
+                                th.item-title 64GB
+                                th.item-title 128GB
+                                th.item-title 256GB
+                            tr.item-avaibility
+                                td.item-content#color-white White
+                                td.item-content.stock-phone#sold-out Sold Out
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                            tr.item-avaibility
+                                td.item-content#color-black Black
+                                td.item-content.stock-phone#selling-fast Selling Fast
+                                td.item-content.stock-phone#selling-fast Selling Fast
+                                td.item-content.stock-phone#selling-fast Selling Fast
+
+                            tr.item-avaibility
+                                td.item-content#color-blue Blue
+                                td.item-content.stock-phone Availabe
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Sold Out
+                            
+                            tr.item-avaibility
+                                td.item-content#color-yellow Yellow
+                                td.item-content.stock-phone#sold-out Sold Out
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                            tr.item-avaibility
+                                td.item-content#color-coral Coral
+                                td.item-content.stock-phone Availabe
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                            tr.item-avaibility
+                                td.item-content#color-red Red
+                                td.item-content.stock-phone#selling-fast Selling Fast
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+                
+                //iph xs 256gb
+                .iphxs-256.price-tab
+                    .three-tabs-btn
+                        .btn.btn-zerolution.priceplan-btn.plan-active(data-priceplan="zerolution360") Zerolution360
+                        .btn.btn-zeroreg.priceplan-btn#mid-zero(data-priceplan="zerolution") Zerolution
+                        .btn.btn-norm.priceplan-btn(data-priceplan="normal-contract") Normal Contract
+                    //zero-360-xs-256gb
+                    .plan-tab.zerolution360
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                span.mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+                    //zero-xs-256gb                    
+                    .plan-tab.zerolution
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                span.mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 40GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+                    
+                    
+                    //nc-xs-256gb                                        
+                    .plan-tab.normal-contract
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                span.mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 40GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                    .bot-text iPhone XS on Zerolution360 is exclusive for Maxis customers only
+
+                    .bot-title Check if your desired model is available
+
+                    .stock-check-mobile
+                        .three-types-btn
+                            .btn.btn-64.mobiletab-btn.mobiletab-active.stock-active(data-mobiletab="gb64-stock-xs") 64GB
+                            .btn.btn-256.mobiletab-btn#mid-zero(data-mobiletab="gb256-stock-xs") 256GB
+                            .btn.btn-512.mobiletab-btn(data-mobiletab="gb512-stock-xs") 512GB
+                        .stock-check-mob
+                            .stocktable.gb64-stock-xs
+                                .title-wrap
+                                    .title Color
+                                    .title 64GB
+                                .content-wrap
+                                    .text#color-white White
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-black Black
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-blue Blue
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-yellow Yellow
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-coral Coral
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-red Red
+                                    .text#limited Limited
+                            .stocktable.gb256-stock-xs#hide-first
+                                .title-wrap
+                                    .title Color
+                                    .title 256GB
+                                .content-wrap
+                                    .text#color-white White
+                                    .text#limited Limited
+                                .content-wrap
+                                    .text#color-black Black
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-blue Blue
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-yellow Yellow
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-coral Coral
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-red Red
+                                    .text#limited Limited
+
+                            .stocktable.gb512-stock-xs#hide-first
+                                .title-wrap
+                                    .title Color
+                                    .title 512GB
+                                .content-wrap
+                                    .text#color-white White
+                                    .text#limited Limited
+                                .content-wrap
+                                    .text#color-black Black
+                                    .text#limited Limited
+                                .content-wrap
+                                    .text#color-blue Blue
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-yellow Yellow
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-coral Coral
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-red Red
+                                    .text#limited Limited
+
+                    .stock-check-div
+                        table
+                            tr.item-title-avaibility
+                                th.item-title Color
+                                th.item-title 64GB
+                                th.item-title 128GB
+                                th.item-title 256GB
+                            tr.item-avaibility
+                                td.item-content#color-white White
+                                td.item-content.stock-phone#sold-out Sold Out
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                            tr.item-avaibility
+                                td.item-content#color-black Black
+                                td.item-content.stock-phone#selling-fast Selling Fast
+                                td.item-content.stock-phone#selling-fast Selling Fast
+                                td.item-content.stock-phone#selling-fast Selling Fast
+
+                            tr.item-avaibility
+                                td.item-content#color-blue Blue
+                                td.item-content.stock-phone Availabe
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Sold Out
+                            
+                            tr.item-avaibility
+                                td.item-content#color-yellow Yellow
+                                td.item-content.stock-phone#sold-out Sold Out
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                            tr.item-avaibility
+                                td.item-content#color-coral Coral
+                                td.item-content.stock-phone Availabe
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                            tr.item-avaibility
+                                td.item-content#color-red Red
+                                td.item-content.stock-phone#selling-fast Selling Fast
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                //iph xs 512 gb
+                .iphxs-512.price-tab
+                    .three-tabs-btn
+                        .btn.btn-zerolution.priceplan-btn.plan-active(data-priceplan="zerolution360") Zerolution360
+                        .btn.btn-zeroreg.priceplan-btn#mid-zero(data-priceplan="zerolution") Zerolution
+                        .btn.btn-norm.priceplan-btn(data-priceplan="normal-contract") Normal Contract
+                    //zero-360-xs-512gb
+                    .plan-tab.zerolution360
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                span.mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+                    //zero-xs-64gb                    
+                    .plan-tab.zerolution
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                span.mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 40GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+                    
+                    
+                    //nc-xs-64gb                                        
+                    .plan-tab.normal-contract
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                span.mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 40GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                    .bot-text iPhone XS on Zerolution360 is exclusive for Maxis customers only
+
+                    .bot-title Check if your desired model is available
+
+                    .stock-check-mobile
+                        .three-types-btn
+                            .btn.btn-64.mobiletab-btn.mobiletab-active.stock-active(data-mobiletab="gb64-stock-xs") 64GB
+                            .btn.btn-256.mobiletab-btn#mid-zero(data-mobiletab="gb256-stock-xs") 256GB
+                            .btn.btn-512.mobiletab-btn(data-mobiletab="gb512-stock-xs") 512GB
+                        .stock-check-mob
+                            .stocktable.gb64-stock-xs
+                                .title-wrap
+                                    .title Color
+                                    .title 64GB
+                                .content-wrap
+                                    .text#color-white White
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-black Black
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-blue Blue
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-yellow Yellow
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-coral Coral
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-red Red
+                                    .text#limited Limited
+                            .stocktable.gb256-stock-xs#hide-first
+                                .title-wrap
+                                    .title Color
+                                    .title 256GB
+                                .content-wrap
+                                    .text#color-white White
+                                    .text#limited Limited
+                                .content-wrap
+                                    .text#color-black Black
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-blue Blue
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-yellow Yellow
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-coral Coral
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-red Red
+                                    .text#limited Limited
+
+                            .stocktable.gb512-stock-xs#hide-first
+                                .title-wrap
+                                    .title Color
+                                    .title 512GB
+                                .content-wrap
+                                    .text#color-white White
+                                    .text#limited Limited
+                                .content-wrap
+                                    .text#color-black Black
+                                    .text#limited Limited
+                                .content-wrap
+                                    .text#color-blue Blue
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-yellow Yellow
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-coral Coral
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-red Red
+                                    .text#limited Limited
+
+                    .stock-check-div
+                        table
+                            tr.item-title-avaibility
+                                th.item-title Color
+                                th.item-title 64GB
+                                th.item-title 128GB
+                                th.item-title 256GB
+                            tr.item-avaibility
+                                td.item-content#color-white White
+                                td.item-content.stock-phone#sold-out Sold Out
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                            tr.item-avaibility
+                                td.item-content#color-black Black
+                                td.item-content.stock-phone#selling-fast Selling Fast
+                                td.item-content.stock-phone#selling-fast Selling Fast
+                                td.item-content.stock-phone#selling-fast Selling Fast
+
+                            tr.item-avaibility
+                                td.item-content#color-blue Blue
+                                td.item-content.stock-phone Availabe
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Sold Out
+                            
+                            tr.item-avaibility
+                                td.item-content#color-yellow Yellow
+                                td.item-content.stock-phone#sold-out Sold Out
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                            tr.item-avaibility
+                                td.item-content#color-coral Coral
+                                td.item-content.stock-phone Availabe
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                            tr.item-avaibility
+                                td.item-content#color-red Red
+                                td.item-content.stock-phone#selling-fast Selling Fast
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                //iph xs max 64gb
+                .iphxs-max-64.price-tab#hide-first
+                    .three-tabs-btn
+                        .btn.btn-zerolution.priceplan-btn.plan-active(data-priceplan="zerolution360") Zerolution360
+                        .btn.btn-zeroreg.priceplan-btn#mid-zero(data-priceplan="zerolution") Zerolution
+                        .btn.btn-norm.priceplan-btn(data-priceplan="normal-contract") Normal Contract
+                    //zero-360-xs-64gb
+                    .plan-tab.zerolution360
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                span.mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+                    //zero-max-64gb                    
+                    .plan-tab.zerolution
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                span.mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 40GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+                    
+                    
+                    //nc-max-64gb                                        
+                    .plan-tab.normal-contract
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                span.mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 40GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+                    
+                    .bot-text iPhone XS on Zerolution360 is exclusive for Maxis customers only
+
+                    .bot-title Check if your desired model is available
+
+                    .stock-check-mobile
+                        .three-types-btn
+                            .btn.btn-64.mobiletab-btn.mobiletab-active.stock-active(data-mobiletab="gb64-stock-max") 64GB
+                            .btn.btn-256.mobiletab-btn#mid-zero(data-mobiletab="gb256-stock-max") 256GB
+                            .btn.btn-512.mobiletab-btn(data-mobiletab="gb512-stock-max") 512GB
+                        .stock-check-mob
+                            .stocktable.gb64-stock-max
+                                .title-wrap
+                                    .title Color
+                                    .title 64GB
+                                .content-wrap
+                                    .text#color-white White
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-black Black
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-blue Blue
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-yellow Yellow
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-coral Coral
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-red Red
+                                    .text#limited Limited
+                            .stocktable.gb256-stock-max#hide-first
+                                .title-wrap
+                                    .title Color
+                                    .title 256GB
+                                .content-wrap
+                                    .text#color-white White
+                                    .text#limited Limited
+                                .content-wrap
+                                    .text#color-black Black
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-blue Blue
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-yellow Yellow
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-coral Coral
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-red Red
+                                    .text#limited Limited
+
+                            .stocktable.gb512-stock-max#hide-first
+                                .title-wrap
+                                    .title Color
+                                    .title 512GB
+                                .content-wrap
+                                    .text#color-white White
+                                    .text#limited Limited
+                                .content-wrap
+                                    .text#color-black Black
+                                    .text#limited Limited
+                                .content-wrap
+                                    .text#color-blue Blue
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-yellow Yellow
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-coral Coral
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-red Red
+                                    .text#limited Limited
+
+                    .stock-check-div
+                        table
+                            tr.item-title-avaibility
+                                th.item-title Color
+                                th.item-title 64GB
+                                th.item-title 128GB
+                                th.item-title 256GB
+                            tr.item-avaibility
+                                td.item-content#color-white White
+                                td.item-content.stock-phone#sold-out Sold Out
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                            tr.item-avaibility
+                                td.item-content#color-black Black
+                                td.item-content.stock-phone#selling-fast Selling Fast
+                                td.item-content.stock-phone#selling-fast Selling Fast
+                                td.item-content.stock-phone#selling-fast Selling Fast
+
+                            tr.item-avaibility
+                                td.item-content#color-blue Blue
+                                td.item-content.stock-phone Availabe
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Sold Out
+                            
+                            tr.item-avaibility
+                                td.item-content#color-yellow Yellow
+                                td.item-content.stock-phone#sold-out Sold Out
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                            tr.item-avaibility
+                                td.item-content#color-coral Coral
+                                td.item-content.stock-phone Availabe
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                            tr.item-avaibility
+                                td.item-content#color-red Red
+                                td.item-content.stock-phone#selling-fast Selling Fast
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+
+                //iph max 256gb
+                .iphxs-max-256.price-tab#hide-first
+                    .three-tabs-btn
+                        .btn.btn-zerolution.priceplan-btn.plan-active(data-priceplan="zerolution360") Zerolution360
+                        .btn.btn-zeroreg.priceplan-btn#mid-zero(data-priceplan="zerolution") Zerolution
+                        .btn.btn-norm.priceplan-btn(data-priceplan="normal-contract") Normal Contract
+                    //zero-360-max-64gb
+                    .plan-tab.zerolution360
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                span.mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+                    //zero-max-64gb                    
+                    .plan-tab.zerolution
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                span.mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 40GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+                    
+                    
+                    //nc-max-64gb                                        
+                    .plan-tab.normal-contract
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                span.mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 40GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                    .bot-text iPhone XS Max on Zerolution360 is exclusive for Maxis customers only
+
+                    .bot-title Check if your desired model is available
+
+                    .stock-check-mobile
+                        .three-types-btn
+                            .btn.btn-64.mobiletab-btn.mobiletab-active.stock-active(data-mobiletab="gb64-stock-max") 64GB
+                            .btn.btn-256.mobiletab-btn#mid-zero(data-mobiletab="gb256-stock-max") 256GB
+                            .btn.btn-512.mobiletab-btn(data-mobiletab="gb512-stock-max") 512GB
+                        .stock-check-mob
+                            .stocktable.gb64-stock-max
+                                .title-wrap
+                                    .title Color
+                                    .title 64GB
+                                .content-wrap
+                                    .text#color-white White
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-black Black
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-blue Blue
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-yellow Yellow
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-coral Coral
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-red Red
+                                    .text#limited Limited
+                            .stocktable.gb256-stock-max#hide-first
+                                .title-wrap
+                                    .title Color
+                                    .title 256GB
+                                .content-wrap
+                                    .text#color-white White
+                                    .text#limited Limited
+                                .content-wrap
+                                    .text#color-black Black
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-blue Blue
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-yellow Yellow
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-coral Coral
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-red Red
+                                    .text#limited Limited
+
+                            .stocktable.gb512-stock-max#hide-first
+                                .title-wrap
+                                    .title Color
+                                    .title 512GB
+                                .content-wrap
+                                    .text#color-white White
+                                    .text#limited Limited
+                                .content-wrap
+                                    .text#color-black Black
+                                    .text#limited Limited
+                                .content-wrap
+                                    .text#color-blue Blue
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-yellow Yellow
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-coral Coral
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-red Red
+                                    .text#limited Limited
+
+                    .stock-check-div
+                        table
+                            tr.item-title-avaibility
+                                th.item-title Color
+                                th.item-title 64GB
+                                th.item-title 128GB
+                                th.item-title 256GB
+                            tr.item-avaibility
+                                td.item-content#color-white White
+                                td.item-content.stock-phone#sold-out Sold Out
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                            tr.item-avaibility
+                                td.item-content#color-black Black
+                                td.item-content.stock-phone#selling-fast Selling Fast
+                                td.item-content.stock-phone#selling-fast Selling Fast
+                                td.item-content.stock-phone#selling-fast Selling Fast
+
+                            tr.item-avaibility
+                                td.item-content#color-blue Blue
+                                td.item-content.stock-phone Availabe
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Sold Out
+                            
+                            tr.item-avaibility
+                                td.item-content#color-yellow Yellow
+                                td.item-content.stock-phone#sold-out Sold Out
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                            tr.item-avaibility
+                                td.item-content#color-coral Coral
+                                td.item-content.stock-phone Availabe
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                            tr.item-avaibility
+                                td.item-content#color-red Red
+                                td.item-content.stock-phone#selling-fast Selling Fast
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+                
+                //iph xs max 512gb
+                .iphxs-max-512.price-tab#hide-first
+                    .three-tabs-btn
+                        .btn.btn-zerolution.priceplan-btn.plan-active(data-priceplan="zerolution360") Zerolution360
+                        .btn.btn-zeroreg.priceplan-btn#mid-zero(data-priceplan="zerolution") Zerolution
+                        .btn.btn-norm.priceplan-btn(data-priceplan="normal-contract") Normal Contract
+                    //zero-360-max-64gb
+                    .plan-tab.zerolution360
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                span.mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+                    //zero-max-64gb                    
+                    .plan-tab.zerolution
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                span.mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 40GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+                    
+                    
+                    //nc-max-64gb                                        
+                    .plan-tab.normal-contract
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                span.mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 40GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+                    
+                    .bot-text iPhone XS Max on Zerolution360 is exclusive for Maxis customers only
+
+                    .bot-title Check if your desired model is available
+
+                    .stock-check-mobile
+                        .three-types-btn
+                            .btn.btn-64.mobiletab-btn.mobiletab-active.stock-active(data-mobiletab="gb64-stock-max") 64GB
+                            .btn.btn-256.mobiletab-btn#mid-zero(data-mobiletab="gb256-stock-max") 256GB
+                            .btn.btn-512.mobiletab-btn(data-mobiletab="gb512-stock-max") 512GB
+                        .stock-check-mob
+                            .stocktable.gb64-stock-max
+                                .title-wrap
+                                    .title Color
+                                    .title 64GB
+                                .content-wrap
+                                    .text#color-white White
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-black Black
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-blue Blue
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-yellow Yellow
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-coral Coral
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-red Red
+                                    .text#limited Limited
+                            .stocktable.gb256-stock-max#hide-first
+                                .title-wrap
+                                    .title Color
+                                    .title 256GB
+                                .content-wrap
+                                    .text#color-white White
+                                    .text#limited Limited
+                                .content-wrap
+                                    .text#color-black Black
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-blue Blue
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-yellow Yellow
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-coral Coral
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-red Red
+                                    .text#limited Limited
+
+                            .stocktable.gb512-stock-max#hide-first
+                                .title-wrap
+                                    .title Color
+                                    .title 512GB
+                                .content-wrap
+                                    .text#color-white White
+                                    .text#limited Limited
+                                .content-wrap
+                                    .text#color-black Black
+                                    .text#limited Limited
+                                .content-wrap
+                                    .text#color-blue Blue
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-yellow Yellow
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-coral Coral
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-red Red
+                                    .text#limited Limited
+
+                    .stock-check-div
+                        table
+                            tr.item-title-avaibility
+                                th.item-title Color
+                                th.item-title 64GB
+                                th.item-title 128GB
+                                th.item-title 256GB
+                            tr.item-avaibility
+                                td.item-content#color-white White
+                                td.item-content.stock-phone#sold-out Sold Out
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                            tr.item-avaibility
+                                td.item-content#color-black Black
+                                td.item-content.stock-phone#selling-fast Selling Fast
+                                td.item-content.stock-phone#selling-fast Selling Fast
+                                td.item-content.stock-phone#selling-fast Selling Fast
+
+                            tr.item-avaibility
+                                td.item-content#color-blue Blue
+                                td.item-content.stock-phone Availabe
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Sold Out
+                            
+                            tr.item-avaibility
+                                td.item-content#color-yellow Yellow
+                                td.item-content.stock-phone#sold-out Sold Out
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                            tr.item-avaibility
+                                td.item-content#color-coral Coral
+                                td.item-content.stock-phone Availabe
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                            tr.item-avaibility
+                                td.item-content#color-red Red
+                                td.item-content.stock-phone#selling-fast Selling Fast
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+                
+                //iph xr 64 gb
+                .iphxr-64.price-tab#hide-first
+                    .three-tabs-btn
+                        .btn.btn-zerolution.priceplan-btn.plan-active(data-priceplan="zerolution360") Zerolution360
+                        .btn.btn-zeroreg.priceplan-btn#mid-zero(data-priceplan="zerolution") Zerolution
+                        .btn.btn-norm.priceplan-btn(data-priceplan="normal-contract") Normal Contract
+                    //zero-360-xr-64gb
+                    .plan-tab.zerolution360
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                span.mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+                    //zero-xr-64gb                    
+                    .plan-tab.zerolution
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                span.mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 40GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+                    
+                    
+                    //nc-xr-64gb                                        
+                    .plan-tab.normal-contract
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                span.mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 40GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                    .bot-text iPhone XS on Zerolution360 is exclusive for Maxis customers only
+
+                    .bot-title Check if your desired model is available
+
+                    .stock-check-mobile
+                        .three-types-btn
+                            .btn.btn-64.mobiletab-btn.mobiletab-active.stock-active(data-mobiletab="gb64-stock-xr") 64GB
+                            .btn.btn-256.mobiletab-btn#mid-zero(data-mobiletab="gb256-stock-xr") 256GB
+                            .btn.btn-512.mobiletab-btn(data-mobiletab="gb512-stock-xr") 512GB
+                        .stock-check-mob
+                            .stocktable.gb64-stock-xr
+                                .title-wrap
+                                    .title Color
+                                    .title 64GB
+                                .content-wrap
+                                    .text#color-white White
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-black Black
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-blue Blue
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-yellow Yellow
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-coral Coral
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-red Red
+                                    .text#limited Limited
+                            .stocktable.gb256-stock-xr#hide-first
+                                .title-wrap
+                                    .title Color
+                                    .title 256GB
+                                .content-wrap
+                                    .text#color-white White
+                                    .text#limited Limited
+                                .content-wrap
+                                    .text#color-black Black
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-blue Blue
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-yellow Yellow
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-coral Coral
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-red Red
+                                    .text#limited Limited
+
+                            .stocktable.gb512-stock-xr#hide-first
+                                .title-wrap
+                                    .title Color
+                                    .title 512GB
+                                .content-wrap
+                                    .text#color-white White
+                                    .text#limited Limited
+                                .content-wrap
+                                    .text#color-black Black
+                                    .text#limited Limited
+                                .content-wrap
+                                    .text#color-blue Blue
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-yellow Yellow
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-coral Coral
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-red Red
+                                    .text#limited Limited
+
+                    .stock-check-div
+                        table
+                            tr.item-title-avaibility
+                                th.item-title Color
+                                th.item-title 64GB
+                                th.item-title 128GB
+                                th.item-title 256GB
+                            tr.item-avaibility
+                                td.item-content#color-white White
+                                td.item-content.stock-phone#sold-out Sold Out
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                            tr.item-avaibility
+                                td.item-content#color-black Black
+                                td.item-content.stock-phone#selling-fast Selling Fast
+                                td.item-content.stock-phone#selling-fast Selling Fast
+                                td.item-content.stock-phone#selling-fast Selling Fast
+
+                            tr.item-avaibility
+                                td.item-content#color-blue Blue
+                                td.item-content.stock-phone Availabe
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Sold Out
+                            
+                            tr.item-avaibility
+                                td.item-content#color-yellow Yellow
+                                td.item-content.stock-phone#sold-out Sold Out
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                            tr.item-avaibility
+                                td.item-content#color-coral Coral
+                                td.item-content.stock-phone Availabe
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                            tr.item-avaibility
+                                td.item-content#color-red Red
+                                td.item-content.stock-phone#selling-fast Selling Fast
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+                
+                //iph xr 256gb
+                .iphxr-256.price-tab#hide-first
+                    .three-tabs-btn
+                        .btn.btn-zerolution.priceplan-btn.plan-active(data-priceplan="zerolution360") Zerolution360
+                        .btn.btn-zeroreg.priceplan-btn#mid-zero(data-priceplan="zerolution") Zerolution
+                        .btn.btn-norm.priceplan-btn(data-priceplan="normal-contract") Normal Contract
+                    //zero-360-xr-64gb
+                    .plan-tab.zerolution360
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                span.mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+                    //zero-xr-64gb                    
+                    .plan-tab.zerolution
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                span.mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 40GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+                    
+                    
+                    //nc-xr-64gb                                        
+                    .plan-tab.normal-contract
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                span.mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 40GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                    .bot-text iPhone XS on Zerolution360 is exclusive for Maxis customers only
+
+                    .bot-title Check if your desired model is available
+
+                    .stock-check-mobile
+                        .three-types-btn
+                            .btn.btn-64.mobiletab-btn.mobiletab-active.stock-active(data-mobiletab="gb64-stock-xr") 64GB
+                            .btn.btn-256.mobiletab-btn#mid-zero(data-mobiletab="gb256-stock-xr") 256GB
+                            .btn.btn-512.mobiletab-btn(data-mobiletab="gb512-stock-xr") 512GB
+                        .stock-check-mob
+                            .stocktable.gb64-stock-xr
+                                .title-wrap
+                                    .title Color
+                                    .title 64GB
+                                .content-wrap
+                                    .text#color-white White
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-black Black
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-blue Blue
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-yellow Yellow
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-coral Coral
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-red Red
+                                    .text#limited Limited
+                            .stocktable.gb256-stock-xr#hide-first
+                                .title-wrap
+                                    .title Color
+                                    .title 256GB
+                                .content-wrap
+                                    .text#color-white White
+                                    .text#limited Limited
+                                .content-wrap
+                                    .text#color-black Black
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-blue Blue
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-yellow Yellow
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-coral Coral
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-red Red
+                                    .text#limited Limited
+
+                            .stocktable.gb512-stock-xr#hide-first
+                                .title-wrap
+                                    .title Color
+                                    .title 512GB
+                                .content-wrap
+                                    .text#color-white White
+                                    .text#limited Limited
+                                .content-wrap
+                                    .text#color-black Black
+                                    .text#limited Limited
+                                .content-wrap
+                                    .text#color-blue Blue
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-yellow Yellow
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-coral Coral
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-red Red
+                                    .text#limited Limited
+
+                    .stock-check-div
+                        table
+                            tr.item-title-avaibility
+                                th.item-title Color
+                                th.item-title 64GB
+                                th.item-title 128GB
+                                th.item-title 256GB
+                            tr.item-avaibility
+                                td.item-content#color-white White
+                                td.item-content.stock-phone#sold-out Sold Out
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                            tr.item-avaibility
+                                td.item-content#color-black Black
+                                td.item-content.stock-phone#selling-fast Selling Fast
+                                td.item-content.stock-phone#selling-fast Selling Fast
+                                td.item-content.stock-phone#selling-fast Selling Fast
+
+                            tr.item-avaibility
+                                td.item-content#color-blue Blue
+                                td.item-content.stock-phone Availabe
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Sold Out
+                            
+                            tr.item-avaibility
+                                td.item-content#color-yellow Yellow
+                                td.item-content.stock-phone#sold-out Sold Out
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                            tr.item-avaibility
+                                td.item-content#color-coral Coral
+                                td.item-content.stock-phone Availabe
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                            tr.item-avaibility
+                                td.item-content#color-red Red
+                                td.item-content.stock-phone#selling-fast Selling Fast
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                //iph xr 512gb
+                .iphxr-512.price-tab#hide-first
+                    .three-tabs-btn
+                        .btn.btn-zerolution.priceplan-btn.plan-active(data-priceplan="zerolution360") Zerolution360
+                        .btn.btn-zeroreg.priceplan-btn#mid-zero(data-priceplan="zerolution") Zerolution
+                        .btn.btn-norm.priceplan-btn(data-priceplan="normal-contract") Normal Contract
+                    //zero-360-xr-64gb
+                    .plan-tab.zerolution360
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                span.mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+                    //zero-xr-64gb                    
+                    .plan-tab.zerolution
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                span.mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 40GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+                    
+                    
+                    //nc-xr-64gb                                        
+                    .plan-tab.normal-contract
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                span.mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 40GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                        .plan1-table.all-plan-table
+                            .table-header
+                                .title Maxis
+                                span.title-bold One
+                                .title Plan 188
+                            .monthly-payment-div
+                                .mp-title Monthly Payment
+                                sup.sup-currency RM
+                                .mp-value XX
+                                .mp-month /mth
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content All day data
+                                .main-content 60GB
+                            .content-div
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Free calls and text
+                                .main-content 60GB
+                            .content-div     
+                                span.fa-plus.cust-plus +
+                                .subtitle-content Easily share your data
+                                .main-content 60GB
+                            .bot-content-div
+                                .bot-content Upgrade to Zerolution360 Premium for just RM10/mth
+
+                    .bot-text iPhone XS on Zerolution360 is exclusive for Maxis customers only
+
+                    .bot-title Check if your desired model is available
+
+                    .stock-check-mobile
+                        .three-types-btn
+                            .btn.btn-64.mobiletab-btn.mobiletab-active.stock-active(data-mobiletab="gb64-stock-xr") 64GB
+                            .btn.btn-256.mobiletab-btn#mid-zero(data-mobiletab="gb256-stock-xr") 256GB
+                            .btn.btn-512.mobiletab-btn(data-mobiletab="gb512-stock-xr") 512GB
+                        .stock-check-mob
+                            .stocktable.gb64-stock-xr
+                                .title-wrap
+                                    .title Color
+                                    .title 64GB
+                                .content-wrap
+                                    .text#color-white White
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-black Black
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-blue Blue
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-yellow Yellow
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-coral Coral
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-red Red
+                                    .text#limited Limited
+                            .stocktable.gb256-stock-xr#hide-first
+                                .title-wrap
+                                    .title Color
+                                    .title 256GB
+                                .content-wrap
+                                    .text#color-white White
+                                    .text#limited Limited
+                                .content-wrap
+                                    .text#color-black Black
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-blue Blue
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-yellow Yellow
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-coral Coral
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-red Red
+                                    .text#limited Limited
+
+                            .stocktable.gb512-stock-xr#hide-first
+                                .title-wrap
+                                    .title Color
+                                    .title 512GB
+                                .content-wrap
+                                    .text#color-white White
+                                    .text#limited Limited
+                                .content-wrap
+                                    .text#color-black Black
+                                    .text#limited Limited
+                                .content-wrap
+                                    .text#color-blue Blue
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-yellow Yellow
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-coral Coral
+                                    .text#instock In-stock
+                                .content-wrap
+                                    .text#color-red Red
+                                    .text#limited Limited
+
+                    .stock-check-div
+                        table
+                            tr.item-title-avaibility
+                                th.item-title Color
+                                th.item-title 64GB
+                                th.item-title 128GB
+                                th.item-title 256GB
+                            tr.item-avaibility
+                                td.item-content#color-white White
+                                td.item-content.stock-phone#sold-out Sold Out
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                            tr.item-avaibility
+                                td.item-content#color-black Black
+                                td.item-content.stock-phone#selling-fast Selling Fast
+                                td.item-content.stock-phone#selling-fast Selling Fast
+                                td.item-content.stock-phone#selling-fast Selling Fast
+
+                            tr.item-avaibility
+                                td.item-content#color-blue Blue
+                                td.item-content.stock-phone Availabe
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Sold Out
+                            
+                            tr.item-avaibility
+                                td.item-content#color-yellow Yellow
+                                td.item-content.stock-phone#sold-out Sold Out
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                            tr.item-avaibility
+                                td.item-content#color-coral Coral
+                                td.item-content.stock-phone Availabe
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+                            tr.item-avaibility
+                                td.item-content#color-red Red
+                                td.item-content.stock-phone#selling-fast Selling Fast
+                                td.item-content.stock-phone Available
+                                td.item-content.stock-phone Available
+
+    .container
+        .btn-div.d-flex.justify-content-center
+            .btn.btn-cta Pre-order Now
+               
+block footer
