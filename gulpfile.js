@@ -167,6 +167,7 @@ gulp.task('images', function(){
       interlaced: true
     })))
   .pipe(gulp.dest('dist/images'))
+  .pipe(gulp.dest('dist/css/images'))
 });
 
 
