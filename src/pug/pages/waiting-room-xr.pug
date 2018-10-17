@@ -1,6 +1,7 @@
 extends ../template.pug
 
 block header
+    include ../regions/header.pug
     
 
 block content
@@ -173,9 +174,5 @@ block content
                                     td.item-content.stock-phone#selling-fast Selling Fast
                                     td.item-content.stock-phone Available
 
-
-
-
-
-
 block footer
+    include ../regions/footer.pug

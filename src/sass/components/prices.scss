@@ -200,6 +200,7 @@
     .price-overview{
         position: relative;
         .price-tab {
+            display: none;
             padding: 10px 30px;
             @include media-breakpoint-down(md){
                 padding: 0;
@@ -231,18 +232,14 @@
                 }
             }
             
-            .isActive{
-                display: flex;
-                @include media-breakpoint-down(md){
-                    display: block;
-                }
-            }
+            
             .plan-tab{
                 display: none;
                 justify-content: center;
                 @include media-breakpoint-down(md){
-                    display: block;
+                    display: none;
                 }
+                
                 
                 .all-plan-table{
                     background-color: #f2f2f2;
@@ -358,6 +355,12 @@
                             width: 85%;
                         }
                     }
+                }
+            }
+            .isActive{
+                display: flex;
+                @include media-breakpoint-down(md){
+                    display: block;
                 }
             }
             .stock-check-div{
@@ -724,9 +727,9 @@
                 }
             }
         }
-        
-        #hide-first{
-            display:none;
+        .tab-active{
+            display: block;
         }
+        
     }
 }
