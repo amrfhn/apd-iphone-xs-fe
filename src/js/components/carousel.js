@@ -19,12 +19,12 @@
                 centerMode: false,
                 dots: true,
                 fade: false,
-                infinite: false,
+                infinite: true,
                 initialSlide: 0,
                 mobileFirst: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                useCSS: false,
+                useCSS: true,
                 variableWidth: false,
                 responsive: [
                     {

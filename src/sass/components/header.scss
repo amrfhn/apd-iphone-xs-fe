@@ -1,0 +1,15 @@
+.header-bar{
+    background-color: #fff;
+    width: 100%;
+    .left{
+        padding: 10px;
+        margin-left: 25px;
+        .brand{
+            .logo-max{
+                background-size: contain;
+                height: 50px;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}

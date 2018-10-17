@@ -1,6 +1,7 @@
 extends ../template.pug
 
 block header
+    include ../regions/header.pug
     
 
 block content
@@ -10,15 +11,16 @@ block content
             
             .mt-30
             .img-div
+               .img-div
                 .iph-1
                     .img-wrapper(style="background-image:url('images/png/iphone-xs-preord.png');")
-                    .tagline(style="background-image:url('images/png/logo-xs.png');")
+                    .tagline(style="background-image:url('images/png/logo-xs-1.png');")
                         span.visualHidden iPhone XS
                 .mt-30
                 .iph-1
-                    .img-wrapper(style="background-image:url('images/png/xr-12.png');top:23px;")
-                    .tagline(style="background-image:url('images/png/logo-xr.png');")
-                        span.visualHidden iPhone XS  
+                    .img-wrapper#top-mobile(style="background-image:url('images/png/xr-12.png');")
+                    .tagline(style="background-image:url('images/png/logo-xr-1.png');")
+                        span.visualHidden iPhone XS 
             .header We're really sorry. :(
             .description
                 span It's currently such a crazy time for our servers. We're a little overwhelmed by our orders and we need a short moment to calm down. But don't you worry. We'll be up and running again soon.
@@ -30,3 +32,4 @@ block content
 
 
 block footer
+    include ../regions/footer.pug

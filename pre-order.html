@@ -14,6 +14,14 @@
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
+    <header>
+      <div class="container-fluid">
+        <div class="header-bar">
+          <div class="left"><a class="brand" href="#">
+              <div class="logo-max" style="background-image:url('images/png/maxis.svg');"></div></a></div>
+        </div>
+      </div>
+    </header>
     <main class="offset-menu">
       <div class="container">
         <div class="progress-div">
@@ -42,12 +50,12 @@
           <div class="img-div">
             <div class="iph-1">
               <div class="img-wrapper" style="background-image:url('images/png/iphone-xs-preord.png');"></div>
-              <div class="tagline" style="background-image:url('images/png/logo-xs.png');"><span class="visualHidden">iPhone XS</span></div>
+              <div class="tagline" style="background-image:url('images/png/logo-xs-1.png');"><span class="visualHidden">iPhone XS</span></div>
             </div>
             <div class="mt-30"></div>
             <div class="iph-1">
-              <div class="img-wrapper" style="background-image:url('images/png/xr-12.png');top:23px;"></div>
-              <div class="tagline" style="background-image:url('images/png/logo-xr.png');"><span class="visualHidden">iPhone XS           </span></div>
+              <div class="img-wrapper" id="top-mobile" style="background-image:url('images/png/xr-12.png');"></div>
+              <div class="tagline" style="background-image:url('images/png/logo-xr-1.png');"><span class="visualHidden">iPhone XS          </span></div>
             </div>
           </div>
           <div class="mt-50"></div>
@@ -62,26 +70,32 @@
           <h3 class="subheader">You may also be interested in these</h3>
           <div class="mt-30"></div>
           <div class="cross-sell-tiles">
-            <div class="tile-item col-xs-12">
-              <div class="featured-img" style="background-image:url('images/png/1_tiles_zerolution360.jpg');"></div>
-              <p class="description">Get a zero worries iPhone here</p>
-            </div>
-            <div class="tile-item col-xs-12">
-              <div class="featured-img" style="background-image:url('images/png/2_tiles_trade_in_up.jpg');"></div>
-              <p class="description">Trade in your old phone and save up to RM2,040</p>
-            </div>
-            <div class="tile-item col-xs-12">
-              <div class="featured-img" style="background-image:url('images/png/3_tiles_homepage.jpg');"></div>
-              <p class="description">Malaysia's No.1 4G LTE network</p>
-            </div>
+            <div class="tile-item"><a class="tiles-div" href="https://www.maxis.com.my/en/personal/devices/ownership.html#Zerolution360">
+                <div class="featured-img" style="background-image:url('images/png/1_tiles_zerolution360.jpg');"></div>
+                <p class="description">Get a zero worries iPhone here</p></a></div>
+            <div class="tile-item"><a class="tiles-div" href="https://www.maxis.com.my/en/personal/devices/all-phones.html">
+                <div class="featured-img" style="background-image:url('images/png/2_tiles_all_devices.jpg');"></div>
+                <p class="description">Trade in your old phone and save up to RM2,040</p></a></div>
+            <div class="tile-item"><a class="tiles-div" href="https://www.maxis.com.my/en/personal/internet/maxisonehome.html">
+                <div class="featured-img" style="background-image:url('images/png/3_tiles_fibrenation.jpg');"></div>
+                <p class="description">Malaysia's No.1 4G LTE network</p></a></div>
           </div>
         </div>
       </div>
-    </main><script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </main>
+    <footer>
+      <div class="container-fluid">
+        <div class="footer-bar">
+          <div class="footer-wrapper">
+            <div class="text">Copyright © 2018 Maxis Bhd [867573-A]. All rights reserved.</div>
+          </div>
+        </div>
+      </div>
+    </footer><script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="js/main.js"></script>
   </body>

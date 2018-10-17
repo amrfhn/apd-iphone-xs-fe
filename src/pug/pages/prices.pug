@@ -1,6 +1,7 @@
 extends ../template.pug
 
 block header
+    include ../regions/header.pug
     
 
 block content
@@ -62,7 +63,7 @@ block content
             .price-overview
                 
                 //iph xs 64gb
-                .iphxs-64.price-tab
+                .iphxs-64.price-tab.tab-active
                     .three-tabs-btn
                         a.tab-nav.tab-prev(href="") <
                         .btn.btn-zerolution.priceplan-btn.plan-active(data-priceplan="zerolution360") Zerolution360
@@ -428,7 +429,7 @@ block content
                         .btn.btn-zeroreg.priceplan-btn#mid-zero(data-priceplan="zerolution") Zerolution
                         .btn.btn-norm.priceplan-btn(data-priceplan="normal-contract") Normal Contract
                     //zero-360-xs-256gb
-                    .plan-tab.zerolution360
+                    .plan-tab.zerolution360.isActive
                         .plan1-table.all-plan-table
                             .table-header
                                 .title Maxis
@@ -786,7 +787,7 @@ block content
                         .btn.btn-zeroreg.priceplan-btn#mid-zero(data-priceplan="zerolution") Zerolution
                         .btn.btn-norm.priceplan-btn(data-priceplan="normal-contract") Normal Contract
                     //zero-360-xs-512gb
-                    .plan-tab.zerolution360
+                    .plan-tab.zerolution360.isActive
                         .plan1-table.all-plan-table
                             .table-header
                                 .title Maxis
@@ -1138,13 +1139,13 @@ block content
                                 td.item-content.stock-phone Available
 
                 //iph xs max 64gb
-                .iphxs-max-64.price-tab#hide-first
+                .iphxs-max-64.price-tab
                     .three-tabs-btn
                         .btn.btn-zerolution.priceplan-btn.plan-active(data-priceplan="zerolution360") Zerolution360
                         .btn.btn-zeroreg.priceplan-btn#mid-zero(data-priceplan="zerolution") Zerolution
                         .btn.btn-norm.priceplan-btn(data-priceplan="normal-contract") Normal Contract
                     //zero-360-xs-64gb
-                    .plan-tab.zerolution360
+                    .plan-tab.zerolution360.isActive
                         .plan1-table.all-plan-table
                             .table-header
                                 .title Maxis
@@ -1497,13 +1498,13 @@ block content
 
 
                 //iph max 256gb
-                .iphxs-max-256.price-tab#hide-first
+                .iphxs-max-256.price-tab
                     .three-tabs-btn
                         .btn.btn-zerolution.priceplan-btn.plan-active(data-priceplan="zerolution360") Zerolution360
                         .btn.btn-zeroreg.priceplan-btn#mid-zero(data-priceplan="zerolution") Zerolution
                         .btn.btn-norm.priceplan-btn(data-priceplan="normal-contract") Normal Contract
                     //zero-360-max-64gb
-                    .plan-tab.zerolution360
+                    .plan-tab.zerolution360.isActive
                         .plan1-table.all-plan-table
                             .table-header
                                 .title Maxis
@@ -1861,7 +1862,7 @@ block content
                         .btn.btn-zeroreg.priceplan-btn#mid-zero(data-priceplan="zerolution") Zerolution
                         .btn.btn-norm.priceplan-btn(data-priceplan="normal-contract") Normal Contract
                     //zero-360-max-64gb
-                    .plan-tab.zerolution360
+                    .plan-tab.zerolution360.isActive
                         .plan1-table.all-plan-table
                             .table-header
                                 .title Maxis
@@ -2219,7 +2220,7 @@ block content
                         .btn.btn-zeroreg.priceplan-btn#mid-zero(data-priceplan="zerolution") Zerolution
                         .btn.btn-norm.priceplan-btn(data-priceplan="normal-contract") Normal Contract
                     //zero-360-xr-64gb
-                    .plan-tab.zerolution360
+                    .plan-tab.zerolution360.isActive
                         .plan1-table.all-plan-table
                             .table-header
                                 .title Maxis
@@ -2577,7 +2578,7 @@ block content
                         .btn.btn-zeroreg.priceplan-btn#mid-zero(data-priceplan="zerolution") Zerolution
                         .btn.btn-norm.priceplan-btn(data-priceplan="normal-contract") Normal Contract
                     //zero-360-xr-64gb
-                    .plan-tab.zerolution360
+                    .plan-tab.zerolution360.isActive
                         .plan1-table.all-plan-table
                             .table-header
                                 .title Maxis
@@ -2935,7 +2936,7 @@ block content
                         .btn.btn-zeroreg.priceplan-btn#mid-zero(data-priceplan="zerolution") Zerolution
                         .btn.btn-norm.priceplan-btn(data-priceplan="normal-contract") Normal Contract
                     //zero-360-xr-64gb
-                    .plan-tab.zerolution360
+                    .plan-tab.zerolution360.isActive
                         .plan1-table.all-plan-table
                             .table-header
                                 .title Maxis
@@ -3291,3 +3292,4 @@ block content
             .btn.btn-cta Pre-order Now
                
 block footer
+    include ../regions/footer.pug

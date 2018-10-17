@@ -604,10 +604,15 @@
         width: 100%;
         background-position: center;
         background-repeat: no-repeat;
-        margin-top: 270px;
+        //margin-top: 270px;
         @include media-breakpoint-up(md){
             display: none;
+            
+
         }
+    }
+    #mob-only{
+        margin-top: 270px;
     }
 }
 
@@ -666,7 +671,7 @@
     height:810px;
     background-position: center;
     background-repeat: no-repeat;
-    background-image:url('images/chip_large.jpg');
+    background-image:url('images/png/chip_large.jpg');
     @include media-breakpoint-down(md){
         background-image: none;
     }

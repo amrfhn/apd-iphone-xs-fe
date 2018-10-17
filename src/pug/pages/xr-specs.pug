@@ -1,6 +1,7 @@
 extends ../template-2.pug
 
 block header
+    include ../regions/header.pug
     
 
 block content
@@ -25,7 +26,7 @@ block content
                         .hero-img#mobile(style="background-image:url('images/png/xr-header-mob.png');")
 
                     
-                    .headline1(style="background-image:url('images/png/logo-xr-spec.png');")
+                    .headline1(style="background-image:url('images/png/logo_iPhone_XR_white.png');")
                         span.visualHidden iPhone XS
                     .subTagline Brilliant. In every way.
                     .descTagline All-new Liquid Retina display — the most advanced LCD in the industry. Even faster Face ID. The smartest, most powerful chip in a smartphone. And a breakthrough camera system. iPhone XR. It’s beautiful any way you look at it.
@@ -225,8 +226,8 @@ block content
     
     .container
         .row
-            .material-div-1
-                .exc-material-1(style="background-image:url('images/png/5_iphone_xr.png');")
+            .material-div-1#mob-only
+                .exc-material-1#mob-only(style="background-image:url('images/png/5_iphone_xr.png');")
 
 
 
@@ -293,7 +294,5 @@ block content
                 
 
 
-
-
-
 block footer
+    include ../regions/footer.pug
