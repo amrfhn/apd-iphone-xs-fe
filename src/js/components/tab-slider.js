@@ -13,15 +13,16 @@ $(document).ready(function(){
                 var self = $(this);
                 var tabPrev = self.find(".tab-prev");
                 var tabNext = self.find(".tab-next");
-                var pricePlanBtn = self.find(".priceplan-btn");
-                var pricePlanBtnActive = self.find(".priceplan-btn.plan-active");
 
                 //Hide prev on load
                 tabPrev.hide();
-                
+
                 tabPrev.on("click", function(event){
 
                     event.preventDefault();
+
+                    var pricePlanBtn = $(this).parent().find(".priceplan-btn");
+                    var pricePlanBtnActive = $(this).parent().find(".priceplan-btn.plan-active");
 
                     if( pricePlanBtnActive.prev().hasClass("priceplan-btn") ){
 
@@ -42,6 +43,9 @@ $(document).ready(function(){
                 tabNext.on("click", function(event){
 
                     event.preventDefault();
+                    
+                    var pricePlanBtn = $(this).parent().find(".priceplan-btn");
+                    var pricePlanBtnActive = $(this).parent().find(".priceplan-btn.plan-active");
 
                     if( pricePlanBtnActive.next().hasClass("priceplan-btn") ){
 

@@ -11,8 +11,9 @@
       $(".plan-tab").removeClass("isActive");
       $("."+tab).addClass("isActive");
 
-      $(".priceplan-btn").addClass("plan-active");
-      $(".priceplan-btn").not(this).removeClass("plan-active");
+      $(this).parent().find(".priceplan-btn").removeClass("plan-active");
+      $(this).addClass("plan-active");
+      
       //$(".plan-tab").addClass("isActive");
       //$(".plan-tab").not(this).removeClass("isActive");
 
