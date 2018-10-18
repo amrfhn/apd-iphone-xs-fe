@@ -27,7 +27,7 @@ block content
             .header Get your new iPhone on Zerolution360
             .description
                 span Enjoy your new device with zero worries on Zerolution360, offering 1-on-1 replacements, priority repair service, yearly phone upgrades, and more. Find out more 
-                a.click-here(href='#') here.
+                a.click-here(href='https://www.maxis.com.my/en/personal/devices/ownership.html') here.
             .mt-30
             .description
                 span Pre-order your choosen device.
@@ -45,8 +45,8 @@ block content
             
             .mt-50
             .btn-div
-                a.btn.btn-cta(href="xs-specs.html") iPhone XS
-                a.btn.btn-cta(href="xr-specs.html") iPhone XR
+                a.btn.btn-cta.ga-tracker(data-galabel="iPhone XS" href="xs-specs.html") iPhone XS
+                a.btn.btn-cta.ga-tracker(data-galabel="iPhone XR" href="xr-specs.html") iPhone XR
                 
     .container-fluid
         .row.cross-sell-container
@@ -54,17 +54,17 @@ block content
             .mt-30
             .cross-sell-tiles
                 .tile-item
-                    a.tiles-div(href="https://www.maxis.com.my/en/personal/devices/ownership.html#Zerolution360")
+                    a.tiles-div.ga-tracker(data-galabel="Z360" href="https://www.maxis.com.my/en/personal/devices/ownership.html#Zerolution360")
                         .featured-img(style="background-image:url('images/png/1_tiles_zerolution360.jpg');")
                         p.description Find out more about Zerolution360 here
                 .tile-item
-                    a.tiles-div(href="https://www.maxis.com.my/en/personal/devices/all-phones.html")
+                    a.tiles-div.ga-tracker(data-galabel="Trade In Trade Up" href="https://www.maxis.com.my/en/personal/devices/all-phones.html")
                         .featured-img(style="background-image:url('images/png/2_tiles_all_devices.jpg');")
                         p.description View other phones
                 .tile-item
-                    a.tiles-div(href="https://www.maxis.com.my/en/personal/internet/maxisonehome.html")
+                    a.tiles-div.ga-tracker(data-galabel="Maxis" href="https://www.maxis.com.my/en/personal/internet/maxisonehome.html")
                         .featured-img(style="background-image:url('images/png/3_tiles_fibrenation.jpg');")
-                        p.description Get unlimited high-peed home fibre here
+                        p.description Get unlimited high-speed home fibre here
                
 block footer
     include ../regions/footer.pug

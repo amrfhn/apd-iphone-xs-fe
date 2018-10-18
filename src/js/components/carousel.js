@@ -6,10 +6,12 @@
         document.querySelectorAll('.cross-sell-tiles').forEach(function(el) {
 
             $(el).on('init', function(slick,slick,three) {
-                if (!slick.$nextArrow.hasClass('slick-hidden')) {
-                    $(this).addClass('d-flex');
-                } else {
-                    $(this).removeClass('d-flex');
+                if(slick.$nextArrow){
+                    if (!slick.$nextArrow.hasClass('slick-hidden')) {
+                        $(this).addClass('d-flex');
+                    } else {
+                        $(this).removeClass('d-flex');
+                    }
                 }
             })
             $(el).slick({
