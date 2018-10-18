@@ -8,16 +8,17 @@
 
       //$(".plan-tab").hide();
 
-      $(".plan-tab").removeClass("isActive");
+      $(".my-div").removeClass("isActive");
       $("."+tab).addClass("isActive");
 
       $(this).parent().find(".priceplan-btn").removeClass("plan-active");
       $(this).addClass("plan-active");
       
-      //$(".plan-tab").addClass("isActive");
+      
       //$(".plan-tab").not(this).removeClass("isActive");
 
     });
+    
 
     var pricetab = $(".price-tab");
 

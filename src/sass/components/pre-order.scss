@@ -173,6 +173,7 @@
         .btn-cta{
             margin:15px 15px;
             position: relative;
+            text-decoration: none;
             @include media-breakpoint-down(sm){
                 font-size: 14px;
                 margin:10px 5px;
@@ -208,6 +209,7 @@
             height: 310px;
             @include media-breakpoint-down(md){
                 width: 100% !important;
+                 margin: 0px;
             }
             .tiles-div{
                 text-decoration: none;

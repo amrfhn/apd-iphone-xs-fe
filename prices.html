@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iPhone XS</title>
+    <title>iPhone XS &amp; iPhone XR</title>
     <meta name="name" content=""><link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/main.css"  type="text/css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -50,19 +50,34 @@
               <div class="img-div">
                 <div class="img-wrapper" style="background-image:url('images/png/xs-1.png');"></div>
               </div>
-              <div class="tagline" id="tagline-iphxs" style="background-image:url('images/png/logo-xs.png');"><span class="visualHidden">iPhone XS</span></div>
+              <div class="tagline" id="tagline-iphxs" style="background-image:url('images/png/logo-xs-1.png');"><span class="visualHidden">iPhone XS</span></div>
               <div class="device-select" id="device-btn">
                 <div class="btn active slide-toggle" data-pricetab="iphxs-64">64GB</div>
                 <div class="btn slide-toggle" data-pricetab="iphxs-256">256GB</div>
                 <div class="btn slide-toggle" data-pricetab="iphxs-512">512GB</div>
+              </div>
+              <!--mobile-only btn-->
+              <div class="dev-mobile-btn">
+                <div class="device-select-mob">
+                  <div class="tagline" style="background-image:url('images/png/logo-xs-1.png');"><span class="visualHidden">iPhone XS</span></div>
+                  <div class="btn active slide-toggle" data-pricetab="iphxs-64">64GB</div>
+                  <div class="btn slide-toggle" data-pricetab="iphxs-256">256GB</div>
+                  <div class="btn slide-toggle" data-pricetab="iphxs-512">512GB</div>
+                </div>
+                <div class="device-select-mob">
+                  <div class="tagline" style="background-image:url('images/png/logo-max-1.png');"><span class="visualHidden">iPhone XS Max</span></div>
+                  <div class="btn slide-toggle" data-pricetab="iphxs-max-64">64GB</div>
+                  <div class="btn slide-toggle" data-pricetab="iphxs-max-256">256GB</div>
+                  <div class="btn slide-toggle" data-pricetab="iphxs-max-512">512GB</div>
+                </div>
               </div>
             </div>
             <div class="col-xs-12 col-md-4 device-overview mt-xs-70">
               <div class="img-div" id="hide-img">
                 <div class="img-wrapper" style="background-image:url('images/png/xs-max-1.png');"></div>
               </div>
-              <div class="tagline" id="tagline-iphxs" style="background-image:url('images/png/logo-max.png');"><span class="visualHidden">iPhone XS Max</span></div>
-              <div class="device-select">
+              <div class="tagline" id="tagline-iphxs" style="background-image:url('images/png/logo-max-1.png');"><span class="visualHidden">iPhone XS Max</span></div>
+              <div class="device-select" id="device-btn">
                 <div class="btn slide-toggle" data-pricetab="iphxs-max-64">64GB</div>
                 <div class="btn slide-toggle" data-pricetab="iphxs-max-256">256GB</div>
                 <div class="btn slide-toggle" data-pricetab="iphxs-max-512">512GB</div>
@@ -72,7 +87,7 @@
               <div class="img-div">
                 <div class="img-wrapper" style="background-image:url('images/png/xr-1.png');"></div>
               </div>
-              <div class="tagline" id="tagline-iphxs" style="background-image:url('images/png/logo-xr.png');"><span class="visualHidden">iPhone XR</span></div>
+              <div class="tagline" style="background-image:url('images/png/logo-xr-1.png');"><span class="visualHidden">iPhone XR</span></div>
               <div class="device-select">
                 <div class="btn slide-toggle" data-pricetab="iphxr-64">64GB</div>
                 <div class="btn slide-toggle" data-pricetab="iphxr-256">256GB</div>
@@ -97,7 +112,7 @@
               <div class="plan-tab zerolution360 isActive">
                 <div class="plan1-table all-plan-table">
                   <div class="table-header">
-                    <div class="title">Maxis Tab 1</div><span class="title-bold">One</span>
+                    <div class="title">Maxis</div><span class="title-bold">One</span>
                     <div class="title">Plan 188</div>
                   </div>
                   <div class="monthly-payment-div">
@@ -177,7 +192,7 @@
               <div class="plan-tab zerolution">
                 <div class="plan1-table all-plan-table">
                   <div class="table-header">
-                    <div class="title">Maxis Tab 2</div><span class="title-bold">One</span>
+                    <div class="title">Maxis</div><span class="title-bold">One</span>
                     <div class="title">Plan 188</div>
                   </div>
                   <div class="monthly-payment-div">
@@ -257,7 +272,7 @@
               <div class="plan-tab normal-contract">
                 <div class="plan1-table all-plan-table">
                   <div class="table-header">
-                    <div class="title">Maxis Tab 3</div><span class="title-bold">One</span>
+                    <div class="title">Maxis</div><span class="title-bold">One</span>
                     <div class="title">Plan 188</div>
                   </div>
                   <div class="monthly-payment-div">
@@ -483,10 +498,10 @@
             </div>
             <!--iph xs 256gb-->
             <div class="iphxs-256 price-tab">
-              <div class="three-tabs-btn">
+              <div class="three-tabs-btn"><a class="tab-nav tab-prev" href=""><</a>
                 <div class="btn btn-zerolution priceplan-btn plan-active" data-priceplan="zerolution360">Zerolution360</div>
                 <div class="btn btn-zeroreg priceplan-btn" id="mid-zero" data-priceplan="zerolution">Zerolution</div>
-                <div class="btn btn-norm priceplan-btn" data-priceplan="normal-contract">Normal Contract</div>
+                <div class="btn btn-norm priceplan-btn" data-priceplan="normal-contract">Normal Contract</div><a class="tab-nav tab-next" href="">></a>
               </div>
               <!--zero-360-xs-256gb-->
               <div class="plan-tab zerolution360 isActive">
@@ -878,10 +893,10 @@
             </div>
             <!--iph xs 512 gb-->
             <div class="iphxs-512 price-tab">
-              <div class="three-tabs-btn">
+              <div class="three-tabs-btn"><a class="tab-nav tab-prev" href=""><</a>
                 <div class="btn btn-zerolution priceplan-btn plan-active" data-priceplan="zerolution360">Zerolution360</div>
                 <div class="btn btn-zeroreg priceplan-btn" id="mid-zero" data-priceplan="zerolution">Zerolution</div>
-                <div class="btn btn-norm priceplan-btn" data-priceplan="normal-contract">Normal Contract</div>
+                <div class="btn btn-norm priceplan-btn" data-priceplan="normal-contract">Normal Contract</div><a class="tab-nav tab-next" href="">></a>
               </div>
               <!--zero-360-xs-512gb-->
               <div class="plan-tab zerolution360 isActive">
@@ -1273,10 +1288,10 @@
             </div>
             <!--iph xs max 64gb-->
             <div class="iphxs-max-64 price-tab">
-              <div class="three-tabs-btn">
+              <div class="three-tabs-btn"><a class="tab-nav tab-prev" href=""><</a>
                 <div class="btn btn-zerolution priceplan-btn plan-active" data-priceplan="zerolution360">Zerolution360</div>
                 <div class="btn btn-zeroreg priceplan-btn" id="mid-zero" data-priceplan="zerolution">Zerolution</div>
-                <div class="btn btn-norm priceplan-btn" data-priceplan="normal-contract">Normal Contract</div>
+                <div class="btn btn-norm priceplan-btn" data-priceplan="normal-contract">Normal Contract</div><a class="tab-nav tab-next" href="">></a>
               </div>
               <!--zero-360-xs-64gb-->
               <div class="plan-tab zerolution360 isActive">
@@ -1668,10 +1683,10 @@
             </div>
             <!--iph max 256gb-->
             <div class="iphxs-max-256 price-tab">
-              <div class="three-tabs-btn">
+              <div class="three-tabs-btn"><a class="tab-nav tab-prev" href=""><</a>
                 <div class="btn btn-zerolution priceplan-btn plan-active" data-priceplan="zerolution360">Zerolution360</div>
                 <div class="btn btn-zeroreg priceplan-btn" id="mid-zero" data-priceplan="zerolution">Zerolution</div>
-                <div class="btn btn-norm priceplan-btn" data-priceplan="normal-contract">Normal Contract</div>
+                <div class="btn btn-norm priceplan-btn" data-priceplan="normal-contract">Normal Contract</div><a class="tab-nav tab-next" href="">></a>
               </div>
               <!--zero-360-max-64gb-->
               <div class="plan-tab zerolution360 isActive">
@@ -2063,10 +2078,10 @@
             </div>
             <!--iph xs max 512gb-->
             <div class="iphxs-max-512 price-tab" id="hide-first">
-              <div class="three-tabs-btn">
+              <div class="three-tabs-btn"><a class="tab-nav tab-prev" href=""><</a>
                 <div class="btn btn-zerolution priceplan-btn plan-active" data-priceplan="zerolution360">Zerolution360</div>
                 <div class="btn btn-zeroreg priceplan-btn" id="mid-zero" data-priceplan="zerolution">Zerolution</div>
-                <div class="btn btn-norm priceplan-btn" data-priceplan="normal-contract">Normal Contract</div>
+                <div class="btn btn-norm priceplan-btn" data-priceplan="normal-contract">Normal Contract</div><a class="tab-nav tab-next" href="">></a>
               </div>
               <!--zero-360-max-64gb-->
               <div class="plan-tab zerolution360 isActive">
@@ -2458,10 +2473,10 @@
             </div>
             <!--iph xr 64 gb-->
             <div class="iphxr-64 price-tab" id="hide-first">
-              <div class="three-tabs-btn">
+              <div class="three-tabs-btn"><a class="tab-nav tab-prev" href=""><</a>
                 <div class="btn btn-zerolution priceplan-btn plan-active" data-priceplan="zerolution360">Zerolution360</div>
                 <div class="btn btn-zeroreg priceplan-btn" id="mid-zero" data-priceplan="zerolution">Zerolution</div>
-                <div class="btn btn-norm priceplan-btn" data-priceplan="normal-contract">Normal Contract</div>
+                <div class="btn btn-norm priceplan-btn" data-priceplan="normal-contract">Normal Contract</div><a class="tab-nav tab-next" href="">></a>
               </div>
               <!--zero-360-xr-64gb-->
               <div class="plan-tab zerolution360 isActive">
@@ -2853,10 +2868,10 @@
             </div>
             <!--iph xr 256gb-->
             <div class="iphxr-256 price-tab" id="hide-first">
-              <div class="three-tabs-btn">
+              <div class="three-tabs-btn"><a class="tab-nav tab-prev" href=""><</a>
                 <div class="btn btn-zerolution priceplan-btn plan-active" data-priceplan="zerolution360">Zerolution360</div>
                 <div class="btn btn-zeroreg priceplan-btn" id="mid-zero" data-priceplan="zerolution">Zerolution</div>
-                <div class="btn btn-norm priceplan-btn" data-priceplan="normal-contract">Normal Contract</div>
+                <div class="btn btn-norm priceplan-btn" data-priceplan="normal-contract">Normal Contract</div><a class="tab-nav tab-next" href="">></a>
               </div>
               <!--zero-360-xr-64gb-->
               <div class="plan-tab zerolution360 isActive">
@@ -3248,10 +3263,10 @@
             </div>
             <!--iph xr 512gb-->
             <div class="iphxr-512 price-tab" id="hide-first">
-              <div class="three-tabs-btn">
+              <div class="three-tabs-btn"><a class="tab-nav tab-prev" href=""><</a>
                 <div class="btn btn-zerolution priceplan-btn plan-active" data-priceplan="zerolution360">Zerolution360</div>
                 <div class="btn btn-zeroreg priceplan-btn" id="mid-zero" data-priceplan="zerolution">Zerolution</div>
-                <div class="btn btn-norm priceplan-btn" data-priceplan="normal-contract">Normal Contract</div>
+                <div class="btn btn-norm priceplan-btn" data-priceplan="normal-contract">Normal Contract</div><a class="tab-nav tab-next" href="">></a>
               </div>
               <!--zero-360-xr-64gb-->
               <div class="plan-tab zerolution360 isActive">
@@ -3645,9 +3660,7 @@
         </div>
       </div>
       <div class="container">
-        <div class="btn-div d-flex justify-content-center">
-          <div class="btn btn-cta">Pre-order Now</div>
-        </div>
+        <div class="btn-div d-flex justify-content-center"><a class="btn btn-cta" href="waiting-room-xs.html">Pre-order Now</a></div>
       </div>
     </main>
     <footer>

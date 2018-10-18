@@ -17,9 +17,9 @@
             width: 25%;
             height: 1px;
             background-color: #4d4d4d;
-            top: 11%;
+            top: 0%;
             @include media-breakpoint-down(md){
-                top: 6.5%;
+                top: 0%;
                 //left: 25%;
                 width: 50%;        
             }
@@ -40,7 +40,7 @@
         padding: 2px;
         z-index: 3;         
         @include media-breakpoint-down(md){
-            left: 70%;
+            left: 72%;
             top: -15px; 
         }
         .progress-check{
@@ -152,14 +152,17 @@
             }
         }
         .tagline{
-            width: 195px;
-            height: 36px;
-            background-size: 195px 36px;
+            width: 175px;
+            height: 30px;
+            background-size: contain;;
             background-repeat: no-repeat;
             background-image: url('https://www.apple.com/v/iphone-xs/b/images/overview/hero_logo_large.svg');
             margin: auto;
             margin-top: 1em;
             margin-bottom: 1em;
+            @include media-breakpoint-down(md){
+                width: 115px;
+            }
             .visualHidden{
                 position: absolute;
                 clip: rect(1px 1px 1px 1px);
@@ -172,6 +175,11 @@
                 padding: 0;
                 border: 0;
                 text-align: center;
+            }
+        }
+        #tagline-iphxs{
+            @include media-breakpoint-down(md){
+                display: none;
             }
         }
 
@@ -189,6 +197,35 @@
                 background-color: #333333;
                 color: #fff;
                 border:1px solid #333333;
+            }
+        }
+        #device-btn{
+            @include media-breakpoint-down(md){
+                display: none;
+            }
+        }
+        .dev-mobile-btn{
+            display: flex;
+            justify-content: center;
+            @include media-breakpoint-up(md){
+                display: none;
+            }
+            .device-select-mob{
+                margin: auto;
+                .btn{
+                    width: 70px;
+                    margin: 10px auto 5px auto;
+                    background-color: transparent;
+                    color: #000;;
+                    border-radius: 5%;
+                    border:1px solid #8ce600;
+                    padding: 10px 20px;
+                }
+                .active{
+                    background-color: #333333;
+                    color: #fff;
+                    border:1px solid #333333;
+                }
             }
         }
     }
@@ -223,6 +260,7 @@
                     z-index: 999;
                     top: 25%;
                     display: none;
+                    text-decoration: none;
 
                     @include media-breakpoint-down(md){
                         display: block;
@@ -257,6 +295,10 @@
                     border-left: 1px solid #ccc;
                     border-right: 1px solid #ccc;
                     border-radius: 0;
+                    @include media-breakpoint-down(md){
+                        border-left: none;
+                        border-right: none;
+                    }
                 }
                 .plan-active{
                     color: #8ce600;
@@ -270,136 +312,150 @@
                 }
             }
             
-            
-            .plan-tab{
+            .my-div{
                 display: none;
-                justify-content: center;
-                @include media-breakpoint-down(md){
-                    display: none;
-                }
-                
-                
-                .all-plan-table{
-                    background-color: #f2f2f2;
-                    margin: 10px;
+                .plan-tab{
+                    display: flex;
+                    justify-content: center;
                     @include media-breakpoint-down(md){
-                        margin: 20px auto;
+                        display: block;
                     }
-                    .table-header{
-                        background-color: #8ce600;
-                        padding: 10px;
-                        text-align: center;
-                        .title{
-                            display: inline;
-                            font-family: 'Aaux Next Light';
-                            font-weight: 700;
-                            font-size: 32px;
+                    
+                    
+                    .all-plan-table{
+                        background-color: #f2f2f2;
+                        margin: 10px;
+                        @include media-breakpoint-down(md){
+                            margin: 20px auto;
                         }
-                        .title-bold{
-                            display: inline;
-                            font-size: 32px;                        
-                        }
-                    }
-                    .monthly-payment-div{
-                        display: flex;
-                        color: #00449d;
-                        padding: 20px 10px;
-                        border-bottom: 1px solid #c7c7c7;
-                        .mp-title{
-                            font-size: 14px;
-                            width: 80px;
-                            line-height: 1em;
-                            margin-right: auto;
-                            color: #000;
-                            text-transform: uppercase;
-                        }
-                        .sup-currency{
-                            font-size: 14px;
-                        }
-                        .mp-value{
-                            font-size: 32px;
-                        }
-                        .mp-month{
-                            font-size: 25px;
-                            font-family: 'Aaux Next Light';
-                            font-weight: 700;
-                            padding-top: 7px;
-                        }
-                    }
-                    .content-div{
-                        display: flex;
-                        justify-content: center;
-                        padding: 0 10px;
-                        .cust-plus{
-                            width: 13px !important;
-                            height: 5px !important;
-                            background-color: #cecece;
-                            font-size: 24px !important;
-                            color: white;
-                            display: flex !important;
-                            align-items: center;
-                            justify-content: center;
-                            margin-right: 0px;
-                            padding: 8px 10px 0 0px;
-                            padding-bottom: 12px;
-                            margin-top: 15px;
-                            font-family: FontAwesome;
-                            font-weight: normal;
-                            font-style: normal;
-                            text-decoration: inherit;
-                            -webkit-font-smoothing: antialiased;
-                            line-height: normal;
-                            vertical-align: baseline;
-                            background-image: none;
-                            background-position: 0 0;
-                            background-repeat: repeat;
-                            &:before{
-                                content: "";
-                                font-family: FontAwesome;
-                                font-style: normal;
-                                font-weight: normal;
-                                text-decoration: inherit;
-                            /*--adjust as necessary--*/
-                                font-size: 18px;
-                                padding-right: 0.5em;
-                                text-decoration: inherit;
-                                display: inline-block;
+                        .table-header{
+                            background-color: #8ce600;
+                            padding: 10px;
+                            text-align: center;
+                            .title{
+                                display: inline;
+                                font-family: 'Aaux Next Light';
+                                font-weight: 700;
+                                font-size: 32px;
+                            }
+                            .title-bold{
+                                display: inline;
+                                font-size: 32px;                        
                             }
                         }
-                        
-                        .subtitle-content{
-                            font-size: 14px;
-                            line-height: 1em;
-                            margin-right: auto;
-                            width: 33%;
-                            text-transform: uppercase;
-                            padding: 20px 13px;
-                            display: inline-flex;
+                        .monthly-payment-div{
+                            display: flex;
+                            color: #00449d;
+                            padding: 20px 10px;
+                            border-bottom: 1px solid #c7c7c7;
+                            .mp-title{
+                                font-size: 14px;
+                                width: 80px;
+                                line-height: 1em;
+                                margin-right: auto;
+                                color: #000;
+                                text-transform: uppercase;
+                            }
+                            .sup-currency{
+                                font-size: 14px;
+                            }
+                            .mp-value{
+                                font-size: 32px;
+                            }
+                            .mp-month{
+                                font-size: 25px;
+                                font-family: 'Aaux Next Light';
+                                font-weight: 700;
+                                padding-top: 7px;
+                            }
+                        }
+                        .content-div{
+                            display: flex;
+                            justify-content: center;
+                            padding: 0 7px;
+                            .cust-plus{
+                                width: 13px !important;
+                                height: 5px !important;
+                                background-color: #cecece;
+                                font-size: 24px !important;
+                                color: white;
+                                display: flex !important;
+                                align-items: center;
+                                justify-content: center;
+                                margin-right: 0px;
+                                padding: 8px 10px 0 0px;
+                                padding-bottom: 12px;
+                                margin-top: 15px;
+                                font-family: FontAwesome;
+                                font-weight: normal;
+                                font-style: normal;
+                                text-decoration: inherit;
+                                -webkit-font-smoothing: antialiased;
+                                line-height: normal;
+                                vertical-align: baseline;
+                                background-image: none;
+                                background-position: 0 0;
+                                background-repeat: repeat;
+                                &:before{
+                                    content: "";
+                                    font-family: FontAwesome;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    text-decoration: inherit;
+                                /*--adjust as necessary--*/
+                                    font-size: 18px;
+                                    padding-right: 0.5em;
+                                    text-decoration: inherit;
+                                    display: inline-block;
+                                }
+                            }
                             
-                        }
-                        .main-content{
-                            font-size: 30px;
-                            margin: auto;
-                        }
-                    }
-                    .bot-content-div{
-                        display: flex;
-                        justify-content: center;
+                            .subtitle-content{
+                                font-size: 14px;
+                                line-height: 1em;
+                                margin-right: auto;
+                                width: 33%;
+                                text-transform: uppercase;
+                                padding: 20px 13px;
+                                display: inline-flex;
+                                
+                            }
+                            .main-content{
+                                font-size: 23px;
+                                //margin: auto;
+                                margin-top: 17px;
+                                display: inline;
+                            }
+                            .number{
+                                font-size: 35px;
+                                //margin:auto;
+                                margin-top: 4px;
+                                display: inline;
 
-                        .bot-content{
-                            text-align: center;
-                            border-top: 1px solid #ccc;
-                            padding: 10px;
-                            width: 85%;
+                            }
+                        }
+                        .bot-content-div{
+                            display: flex;
+                            justify-content: center;
+
+                            .bot-content{
+                                text-align: center;
+                                border-top: 1px solid #ccc;
+                                padding: 10px;
+                                width: 85%;
+                            }
                         }
                     }
+
                 }
+                
             }
             .isActive{
-                display: flex;
+                display: block;
                 @include media-breakpoint-down(md){
                     display: block;
                 }
+            
             }
             .stock-check-div{
                 padding: 20px 30px;
@@ -602,10 +658,13 @@
             }
         
             .bot-text{
+                
+                display: block;
                 font-size: 16px;
                 text-align: center;
                 color: #333333;
             }
+            
             .bot-title{
                 font-size: 30px;
                 text-align: center;

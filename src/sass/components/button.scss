@@ -13,9 +13,12 @@
     &.btn-cta{
         background-color:#ff0092;
         color: white;
+        text-decoration: none;
+
         &:after{
             content: ">";
             color: white;
+            text-transform: none;
             padding-left: 3em;
             @include media-breakpoint-down(sm){
                 padding-left: 0.5em;

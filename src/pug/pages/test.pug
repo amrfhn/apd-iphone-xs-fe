@@ -1,0 +1,31 @@
+extends ../template.pug
+
+block header
+    include ../regions/header.pug
+    
+
+block content
+
+        .container
+            .row
+                .dropdown
+                    .status
+                        .selected-count #[span 0] selected
+                        .selected-items 
+                    .selectables.accordion-selector
+                        .group-name Something #[span.count ]
+                        ul.group-items(data-group-name="Something")
+                            li.select-all: span Select All Something
+                            li(data-value="NEC 3"): span NEC 3
+                            li(data-value="NEC 2"): span NEC 2
+                            li(data-value="test3"): span Item one 
+                        .group-name Group2  #[span.count ]
+                        ul.group-items(data-group-name="Group2")
+                            li.select-all: span Select All Something
+                            li(data-value="test4"): span Item one 
+                            li(data-value="test5"): span Item one 
+                            li(data-value="test6"): span Item one
+
+
+block footer
+    include ../regions/footer.pug
