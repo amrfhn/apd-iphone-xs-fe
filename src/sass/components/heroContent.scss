@@ -1,7 +1,10 @@
 //hero
 
 .progress-div{
-    padding-bottom: 100px;
+    padding-bottom: 15px;
+    @include media-breakpoint-down(md){
+        padding-bottom: 70px;
+    }
     .progress-line-div{
         #white-line{
             background-color: #fff;
@@ -242,13 +245,35 @@
         letter-spacing: -2px;
         background-clip: text;
         -webkit-background-clip: text;
-        display: inline;
         background-repeat: repeat;
         @include media-breakpoint-down(md){
             font-size: 28px;
         }
     }
 }
+.manifesto-wrapper2{
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    color: #ea9b5a;
+    color: transparent;
+    font-size: 64px;
+    line-height: 1.0625;
+    font-weight: 600;
+    background-size: cover;
+    letter-spacing: -2px;
+    @include media-breakpoint-down(md){
+        font-size: 28px;
+    }
+    .manifesto-headline2{
+        display: inline;
+        color: #fff !important;
+    }
+    .transparent-mask2{
+        display: inline;
+    }
+}
+
 
 .iphxs-overview-div{
     display: flex;

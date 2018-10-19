@@ -1,4 +1,4 @@
-extends ../template.pug
+extends ../template-2.pug
 
 block header
     include ../regions/header.pug
@@ -6,25 +6,13 @@ block header
 
 block content
 
-        .container
-            .row
-                .dropdown
-                    .status
-                        .selected-count #[span 0] selected
-                        .selected-items 
-                    .selectables.accordion-selector
-                        .group-name Something #[span.count ]
-                        ul.group-items(data-group-name="Something")
-                            li.select-all: span Select All Something
-                            li(data-value="NEC 3"): span NEC 3
-                            li(data-value="NEC 2"): span NEC 2
-                            li(data-value="test3"): span Item one 
-                        .group-name Group2  #[span.count ]
-                        ul.group-items(data-group-name="Group2")
-                            li.select-all: span Select All Something
-                            li(data-value="test4"): span Item one 
-                            li(data-value="test5"): span Item one 
-                            li(data-value="test6"): span Item one
+    .container
+        .row
+            .col-12.manifesto-wrapper2(style="background-image:url('images/png/copy_texture_1_large.jpg');") 
+                .manifesto-headline2 Introducing Liquid Retina.
+                .transparent-mask2#texture-1The New display on iPhone XR is the most advanced LCD in the industry. An innovative backlight design allows the screen to stretch into the corners. So you see true-to-life colour from one beautiful edge to the other.
+            .btn-div
+                .btn.btn-1 Learn more
 
 
 block footer

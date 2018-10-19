@@ -32,10 +32,14 @@
 
     &.btn-disabled{
         background-color: #d0d0d0;
+        text-decoration: none;
+        cursor: context-menu;
         &:after{
             content: ">";
-            color: white;
-            padding-left: 1em;
+            padding-left: 3em;
+            @include media-breakpoint-down(sm){
+                padding-left: 0.5em;
+            }
         }
     }
 }

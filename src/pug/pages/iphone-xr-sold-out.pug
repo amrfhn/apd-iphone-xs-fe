@@ -1,0 +1,70 @@
+extends ../template.pug
+
+block header
+    include ../regions/header.pug
+
+block content
+
+
+    .container
+        .progress-div
+            .progress-check-div#progress-preord
+                .progress-check#check-1 1
+            .progress-line-div
+                .progress-line#black-line
+            .progress-onhold-div#white-circ-1
+                .progress-onhold &middot;
+            .progress-onhold-div#white-circ-2
+                .progress-onhold &middot;
+            
+             
+
+    .container
+        .row.pre-order-container
+            
+            
+            .subheader Pre-order with Maxis
+            .header Get your new iPhone on Zerolution360
+            .description
+                span Enjoy your new device with zero worries on Zerolution360, offering 1-on-1 replacements, priority repair service, yearly phone upgrades, and more. Find out more 
+                a.click-here(href='https://www.maxis.com.my/en/personal/devices/ownership.html') here.
+            .mt-30
+            .description
+                span Pre-order your choosen device.
+            .mt-50
+            .img-div
+                .iph-1
+                    .img-wrapper(style="background-image:url('images/png/iphone-xs-preord.png');")
+                    .tagline(style="background-image:url('images/png/logo-xs-1.png');")
+                        span.visualHidden iPhone XS
+                .mt-30
+                .iph-1
+                    .img-wrapper#top-mobile(style="background-image:url('images/png/xr-2.png');")
+                    .tagline(style="background-image:url('images/png/logo-xr-1.png');")
+                        span.visualHidden iPhone XS          
+            
+            .mt-50
+            .btn-div
+                a.btn.btn-cta.ga-tracker(data-galabel="iPhone XS" href="xs-specs.html") iPhone XS
+                .btn.btn-disabled.ga-tracker(data-galabel="iPhone XR" href="#") Sold Out
+                
+    .container-fluid
+        .row.cross-sell-container
+            h3.subheader You may also be interested in these
+            .mt-30
+            .cross-sell-tiles
+                .tile-item
+                    a.tiles-div.ga-tracker(data-galabel="Z360" href="https://www.maxis.com.my/en/personal/devices/ownership.html#Zerolution360")
+                        .featured-img(style="background-image:url('images/png/1_tiles_zerolution360.jpg');")
+                        p.description Find out more about Zerolution360 here
+                .tile-item
+                    a.tiles-div.ga-tracker(data-galabel="Trade In Trade Up" href="https://www.maxis.com.my/en/personal/devices/all-phones.html")
+                        .featured-img(style="background-image:url('images/png/2_tiles_all_devices.jpg');")
+                        p.description View other phones
+                .tile-item
+                    a.tiles-div.ga-tracker(data-galabel="Maxis" href="https://www.maxis.com.my/en/personal/internet/maxisonehome.html")
+                        .featured-img(style="background-image:url('images/png/3_tiles_fibrenation.jpg');")
+                        p.description Get unlimited high-speed home fibre here
+               
+block footer
+    include ../regions/footer.pug
